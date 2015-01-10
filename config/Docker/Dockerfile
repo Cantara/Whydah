@@ -1,6 +1,7 @@
 # This is a comment
 FROM azul/zulu-openjdk-centos:latest
 MAINTAINER Totto <totto@totto.org>
+RUN yum -y update
 RUN yum install -y wget
 
 RUN adduser  SSOLoginWebApp
@@ -60,3 +61,7 @@ RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/update-service.sh"
 RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/start-service.sh &"
 
 
+## Install Apache and set up proxypasses
+RUN yum install -y httpd
+RUN /usr/bin/wget -O /etc/httpd/conf.d/whydah.conf -q -N https://raw.githubusercontent.com/altran/Whydah/master/config/apache/whydah.conf
+# RUN /etc/init.d/httpd restart
