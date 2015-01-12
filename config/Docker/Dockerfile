@@ -59,7 +59,7 @@ RUN chmod 755 /home/UserIdentityBackend/*.sh
 RUN su -  UserIdentityBackend -c "/usr/bin/wget -O useridentitybackend.PROD.properties -q -N https://raw.githubusercontent.com/altran/Whydah-UserIdentityBackend/master/src/main/resources/useridentitybackend.TEST_LOCALHOST.properties"
 RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/update-service.sh"
 RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/start-service.sh &"
-
+COPY testdata /home/UserIdentityBackend/
 
 ## Install Apache and set up proxypasses
 RUN yum install -y httpd
