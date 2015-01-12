@@ -1,6 +1,7 @@
 # This is a comment
 FROM azul/zulu-openjdk-centos:latest
 MAINTAINER Totto <totto@totto.org>
+RUN yum install -y yum-cron
 RUN yum -y update
 RUN yum install -y wget
 
@@ -59,7 +60,11 @@ RUN chmod 755 /home/UserIdentityBackend/*.sh
 RUN su -  UserIdentityBackend -c "/usr/bin/wget -O useridentitybackend.PROD.properties -q -N https://raw.githubusercontent.com/altran/Whydah-UserIdentityBackend/master/src/main/resources/useridentitybackend.TEST_LOCALHOST.properties"
 RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/update-service.sh"
 #RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/start-service.sh &"
-COPY testdata /home/UserIdentityBackend/
+RUN mkdir /home/UserIdentityBackend/bootstrapdata
+RUN mkdir /home/UserIdentityBackend/bootstrapdata/ldap
+RUN mkdir /home/UserIdentityBackend/bootstrapdata/hsqldb
+RUN mkdir /home/UserIdentityBackend/testdata
+COPY testdata /home/UserIdentityBackend/testdata
 
 ## Install Apache and set up proxypasses
 RUN yum install -y httpd
