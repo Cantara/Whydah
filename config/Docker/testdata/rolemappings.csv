@@ -1,0 +1,3 @@
+#userId, applicationId, applicationName, organizationName, roleName, roleValue
+admin, 19, UserAdminWebApplication, Support, WhydahUserAdmin, 1
+erik.drolshammer, 19, UserAdminWebApplication, Developer, WhydahUserAdmin, 1
