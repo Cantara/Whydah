@@ -64,4 +64,14 @@ RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/start-service.sh &"
 ## Install Apache and set up proxypasses
 RUN yum install -y httpd
 RUN /usr/bin/wget -O /etc/httpd/conf.d/whydah.conf -q -N https://raw.githubusercontent.com/altran/Whydah/master/config/apache/whydah.conf
-# RUN /etc/init.d/httpd restart
+
+
+## Set up start of services
+
+RUN yum -y install python-setuptools
+RUN easy_install supervisor
+RUN mkdir -p /var/log/supervisor
+ADD supervisord.conf /etc/supervisord.conf
+EXPOSE 22 80 
+CMD ["/usr/bin/supervisord"]
+# RUN httpd
