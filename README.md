@@ -13,6 +13,12 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9995:9995 -p 9996:9996 -p 9997:99
 ```
 * Go to Whydah [http://localhost/sso/welcome]  (admin/whydahadmin)
 
+Documentation:
+
+* Overview (http://getwhydah.com/)
+* Installation, Architecture and Development (https://wiki.cantara.no/display/whydah/Whydah+Home)
+* Source Code (https://github.com/search?o=desc&q=Whydah&s=updated&type=Repositories&utf8=%E2%9C%93)
+
 
 ![Architectural Overview](https://wiki.cantara.no/download/attachments/37388694/Whydah+infrastructure.png)
 
