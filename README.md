@@ -5,7 +5,6 @@ Top-level repository for the Whydah components
 
 
 Quick set-up (Using Docker on local machine)
-============================================
 
 * Install docker
 * Start Install and Start Whydah, ready for Integration
@@ -14,7 +13,9 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9995:9995 -p 9996:9996 -p 9997:99
 ```
 * Go to Whydah [http://localhost/sso/welcome]  (admin/whydahadmin)
 
-h3. Client code example
+
+
+Client code example
 
 * (Example using Apache HTTP Components Fluent API and jOOX Fluent API)
 ```
