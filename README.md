@@ -13,6 +13,7 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9995:9995 -p 9996:9996 -p 9997:99
 ```
 * Go to Whydah [http://localhost/sso/welcome]  (admin/whydahadmin)
 
+![Whydah Architectural Overview](https://raw2.github.com/altran/Whydah-SSOLoginWebApp/master/Whydah%20infrastructure.png)
 
 
 Client code example
