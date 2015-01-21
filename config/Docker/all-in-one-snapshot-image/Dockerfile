@@ -77,7 +77,7 @@ RUN /usr/bin/wget -O /etc/httpd/conf.d/whydah.conf -q -N https://raw.githubuserc
 RUN yum -y install python-setuptools
 RUN easy_install supervisor
 RUN mkdir -p /var/log/supervisor
-ADD supervisord.conf /etc/supervisord.conf
+ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 #EXPOSE 22 80 
 CMD ["/usr/bin/supervisord"]
 # RUN httpd
