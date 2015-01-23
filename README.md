@@ -1,10 +1,11 @@
 Whydah
 ======
 
-Whydah is an Identity and Single Sign-On solution that provides advanced role-based access control and flexible integrations.  This is the top-level repository for the Whydah components
+Whydah is an Identity and Single Sign-On solution that provides advanced role-based access control and flexible integrations.  This is the top-level repository for the Whydah components.
 
 
 Quick set-up (Using Docker on local machine)
+============================================
 
 * Install docker
 * Start Whydah
@@ -13,7 +14,43 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9995:9995 -p 9996:9996 -p 9997:99
 ```
 * Go to Whydah [http://localhost/sso/welcome]  (admin/whydahadmin)
 
+
+Infrastructure setup components
+===============================
+
+We plan to build a software-defined network application to control and handle various configuration of Whydah production setups. As they are developed they will arrive and be listed and documented here.
+
+
+
+Whydah node configurations
+==========================
+
+To make it easy to adopt and evolve Whydah components, we'll make ready-to use Docker containers of all the Whydah modules, both as Docker images and the corresponding Dockerfile-configurations to make it easy to just grab a complete component or adjust and build your own.
+
+Docker: UIB configurations
+==========================
+
+
+Docker: UAS configurations
+==========================
+
+
+Docker: STS configurations
+==========================
+
+
+Docker: SSOLWA configurations
+=============================
+
+
+Docker: UAWA configurations
+===========================
+
+
+
+
 Documentation:
+==============
 
 * Overview (http://getwhydah.com/)
 * Installation, Architecture and Development (https://wiki.cantara.no/display/whydah/Whydah+Home)
