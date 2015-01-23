@@ -30,7 +30,7 @@ To make it easy to adopt and evolve Whydah components, we'll make ready-to use D
 Docker: UIB configurations
 ==========================
 
-* OpenLdap ansible configuration [https://github.com/javaBin/Whydah-Provisioning]
+* OpenLdap ansible configuration [https://github.com/javaBin/Whydah-Provisioning/tree/master/roles/openldap]
 * OpenLdap dockerfile [https://github.com/altran/Whydah/tree/master/config/Docker/uib/uib-ldap]
 
 Docker: UAS configurations
