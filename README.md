@@ -39,7 +39,7 @@ Docker: UAS configurations
 ==========================
 
 * UAS Docker image [https://registry.hub.docker.com/u/totto/whydah-uas]
-* UAS Dockerfile []
+* UAS Dockerfile [https://raw.githubusercontent.com/altran/Whydah/360f0d821d95eecb3cfd6ae3628a622b5a0c0a63/config/Docker/uas/Dockerfile]
 
 Docker: STS configurations
 ==========================
@@ -51,13 +51,13 @@ Docker: SSOLWA configurations
 =============================
 
 * SSOLWA Docker image [https://registry.hub.docker.com/u/totto/whydah-ssolwa}
-* SSOLWA Dockerfile []
+* SSOLWA Dockerfile [https://raw.githubusercontent.com/altran/Whydah/930dc65bdbed653b717603e09f590603c8d57283/config/Docker/ssolwa/Dockerfile]
 
 Docker: UAWA configurations
 ===========================
 
 * UAWA Docker image [https://registry.hub.docker.com/u/totto/whydah-uawa]
-* UAWA Dockerfile []
+* UAWA Dockerfile [https://raw.githubusercontent.com/altran/Whydah/360f0d821d95eecb3cfd6ae3628a622b5a0c0a63/config/Docker/uawa/Dockerfile]
 
 
 Documentation:
