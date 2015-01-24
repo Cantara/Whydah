@@ -32,23 +32,32 @@ Docker: UIB configurations
 
 * OpenLdap ansible configuration [https://github.com/javaBin/Whydah-Provisioning/tree/master/roles/openldap]
 * OpenLdap dockerfile [https://github.com/altran/Whydah/tree/master/config/Docker/uib/uib-ldap]
+* UIB all-in-one image [https://registry.hub.docker.com/u/totto/whydah-uib-all-in-one/]
+* UIB all-in-one dockerfile []
 
 Docker: UAS configurations
 ==========================
 
+* UAS Docker image [https://registry.hub.docker.com/u/totto/whydah-uas]
+* UAS Dockerfile []
 
 Docker: STS configurations
 ==========================
 
+* STS Docker image [https://registry.hub.docker.com/u/totto/whydah-sts]
+* STS Dockerfile [https://raw.githubusercontent.com/altran/Whydah/27bf84cad672af4985e9142a129e5880d02d2984/config/Docker/sts/Dockerfile]
 
 Docker: SSOLWA configurations
 =============================
 
+* SSOLWA Docker image [https://registry.hub.docker.com/u/totto/whydah-ssolwa}
+* SSOLWA Dockerfile []
 
 Docker: UAWA configurations
 ===========================
 
-
+* UAWA Docker image [https://registry.hub.docker.com/u/totto/whydah-uawa]
+* UAWA Dockerfile []
 
 
 Documentation:
