@@ -38,8 +38,11 @@ String usertoken = Request.Post("https://sso.whydah.net/sso/user/"+appTokenID+"/
 // That's all you need to get a full user database, IAM/SSO, Facebook/OAUTH support ++
 boolean hasEmployeeRoleInMyApp = $(usertoken).xpath("/usertoken/application[@ID="+myAppId+"]/role[@name=\"Employee\"");
 ```
+![Sequence Diagram](https://raw.githubusercontent.com/altran/Whydah/master/images/Integration%20-%20simple%20standalone.png)
 
-![Architectural Overview](https://wiki.cantara.no/download/attachments/37388694/Whydah+infrastructure.png)
+
+
+![Architectural Overview](https://raw.githubusercontent.com/altran/Whydah/master/images/Whydah%20infrastructure.png)
 
 
 
@@ -58,10 +61,14 @@ To make it easy to adopt and evolve Whydah components, we'll make ready-to use D
 Docker: UIB configurations
 ==========================
 
-* OpenLdap ansible configuration [https://github.com/javaBin/Whydah-Provisioning/tree/master/roles/openldap]
-* OpenLdap dockerfile [https://github.com/altran/Whydah/tree/master/config/Docker/uib/uib-ldap]
-* UIB all-in-one image [https://registry.hub.docker.com/u/totto/whydah-uib-all-in-one/]
-* UIB all-in-one dockerfile [https://raw.githubusercontent.com/altran/Whydah/master/config/Docker/uib/uib-all-in-one/Dockerfile]
+* OpenLdap ansible configuration 
+** [https://github.com/javaBin/Whydah-Provisioning/tree/master/roles/openldap]
+* OpenLdap dockerfile 
+** [https://github.com/altran/Whydah/tree/master/config/Docker/uib/uib-ldap]
+* UIB all-in-one image 
+** [https://registry.hub.docker.com/u/totto/whydah-uib-all-in-one/]
+* UIB all-in-one dockerfile 
+** [https://raw.githubusercontent.com/altran/Whydah/master/config/Docker/uib/uib-all-in-one/Dockerfile]
 
 Docker: UAS configurations
 ==========================
