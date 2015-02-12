@@ -33,7 +33,7 @@ Docker: UIB configurations
 * OpenLdap ansible configuration [https://github.com/javaBin/Whydah-Provisioning/tree/master/roles/openldap]
 * OpenLdap dockerfile [https://github.com/altran/Whydah/tree/master/config/Docker/uib/uib-ldap]
 * UIB all-in-one image [https://registry.hub.docker.com/u/totto/whydah-uib-all-in-one/]
-* UIB all-in-one dockerfile []
+* UIB all-in-one dockerfile [https://raw.githubusercontent.com/altran/Whydah/master/config/Docker/uib/uib-all-in-one/Dockerfile]
 
 Docker: UAS configurations
 ==========================
@@ -58,6 +58,16 @@ Docker: UAWA configurations
 
 * UAWA Docker image [https://registry.hub.docker.com/u/totto/whydah-uawa]
 * UAWA Dockerfile [https://raw.githubusercontent.com/altran/Whydah/360f0d821d95eecb3cfd6ae3628a622b5a0c0a63/config/Docker/uawa/Dockerfile]
+
+
+Ansible:  Ansible Whydah provisioning
+=====================================
+
+For those who prefer using Ansible to provision solutions, we suggest that you fork our general 
+ansible provisioning repository on github and adjust it according to youur needs
+
+* [https://github.com/altran/Whydah-Provisioning]
+
 
 
 Documentation:
