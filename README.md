@@ -62,13 +62,13 @@ Docker: UIB configurations
 ==========================
 
 * OpenLdap ansible configuration 
-** [https://github.com/javaBin/Whydah-Provisioning/tree/master/roles/openldap]
+⋅⋅* [https://github.com/javaBin/Whydah-Provisioning/tree/master/roles/openldap]
 * OpenLdap dockerfile 
-** [https://github.com/altran/Whydah/tree/master/config/Docker/uib/uib-ldap]
+⋅⋅* [https://github.com/altran/Whydah/tree/master/config/Docker/uib/uib-ldap]
 * UIB all-in-one image 
-** [https://registry.hub.docker.com/u/totto/whydah-uib-all-in-one/]
+⋅⋅* [https://registry.hub.docker.com/u/totto/whydah-uib-all-in-one/]
 * UIB all-in-one dockerfile 
-** [https://raw.githubusercontent.com/altran/Whydah/master/config/Docker/uib/uib-all-in-one/Dockerfile]
+⋅⋅* [https://raw.githubusercontent.com/altran/Whydah/master/config/Docker/uib/uib-all-in-one/Dockerfile]
 
 Docker: UAS configurations
 ==========================
