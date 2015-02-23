@@ -1,7 +1,7 @@
 Whydah
 ======
 
-Whydah is an Identity and Single Sign-On solution that provides advanced role-based access control and flexible integrations.  This is the top-level repository for the Whydah components.
+Whydah is an Identity and Single Sign-On solution that provides advanced role-based access control and flexible integration's.  This is the top-level repository for the Whydah components.
 
 
 ### Quick set-up (Using Docker on local machine)
