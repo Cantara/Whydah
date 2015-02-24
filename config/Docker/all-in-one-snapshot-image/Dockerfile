@@ -88,6 +88,7 @@ RUN yum -y install python-setuptools
 RUN easy_install supervisor
 RUN mkdir -p /var/log/supervisor
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+RUN ln-s etc/supervisor/conf.d/supervisord.conf /etc/supervisord.conf
 #EXPOSE 22 80 
 CMD ["/usr/bin/supervisord"]
 # RUN httpd
