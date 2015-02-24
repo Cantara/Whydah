@@ -1,0 +1,16 @@
+sudo socketplane network create uib 10.2.0.0/16
+sudo socketplane network create uas 10.3.0.0/16
+sudo socketplane network create sts 10.4.0.0/16
+sudo socketplane network create sso 10.5.0.0/16
+
+sodo socketplane run -n uib -itd totto/whydah-uib-all-in-one
+sudo socketplane run -n uas -itd totto/whydah-uas
+sudo socketplane run -n sts -itd totto/whydah-sts
+sudo socketplane run -n sts -itd totto/whydah-sts
+sudo socketplane run -n sts -itd totto/whydah-sts
+sudo socketplane run -n sts -itd totto/whydah-sts
+sudo socketplane run -n sts -itd totto/whydah-sts
+sudo socketplane run -n sts -itd totto/whydah-sts
+
+sudo socketplane run -n sso -itd totto/whydah-ssolwa
+
