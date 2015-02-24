@@ -1,0 +1,28 @@
+name: whydah_fullstack_example
+
+containers:
+  uib:
+    image: totto/whydah-uib-all-in-one:latest
+  uas:
+    image: totto/whydah-uas:latest
+  sts:
+    image: totto/whydah-sts:latest
+  uawa:
+    image: totto/whydah-uawa:latest
+  sso:
+    image: totto/whydah-ssolwa:latest
+  web:
+    build: .
+    command: bundle exec rackup -p 3000
+    volumes:
+      - .:/whydahvolume
+    ports:
+      - "80:80"
+      - "443:443"
+      - "9990:9990"
+      - "9995:9995"
+      - "9996:9996"
+      - "9997:9997"
+      - "9998:9998"
+    links:
+      - uib, uas, sts, sso
