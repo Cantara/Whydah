@@ -98,9 +98,9 @@ ansible provisioning repository on github and adjust it according to youur needs
 
 ### Documentation:
 
-* Overview (http://getwhydah.com/)
-* Installation, Architecture and Development (https://wiki.cantara.no/display/whydah/Whydah+Home)
-* Source Code (https://github.com/search?o=desc&q=Whydah&s=updated&type=Repositories&utf8=%E2%9C%93)
+* Overview [http://getwhydah.com/]
+* Installation, Architecture and Development (https://wiki.cantara.no/display/whydah/Whydah+Home]
+* Source Code [https://github.com/search?o=desc&q=Whydah&s=updated&type=Repositories&utf8=%E2%9C%93]
 
 
 
