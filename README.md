@@ -62,29 +62,29 @@ To make it easy to adopt and evolve Whydah components, we'll make ready-to use D
 #### Docker: UIB configurations
 
 * OpenLdap ansible configuration  [https://github.com/javaBin/Whydah-Provisioning/tree/master/roles/openldap]
-* OpenLdap dockerfile   [https://github.com/altran/Whydah/tree/master/config/Docker/uib/uib-ldap]
+* OpenLdap dockerfile   [https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/uib/uib-ldap/Dockerfile]
 * UIB all-in-one image  [https://registry.hub.docker.com/u/totto/whydah-uib-all-in-one/]
-* UIB all-in-one dockerfile  [https://raw.githubusercontent.com/altran/Whydah/master/config/Docker/uib/uib-all-in-one/Dockerfile]
+* UIB all-in-one dockerfile  [https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/uib/uib-all-in-one/Dockerfile]
 
 ####  Docker: UAS configurations
 
 * UAS Docker image [https://registry.hub.docker.com/u/totto/whydah-uas]
-* UAS Dockerfile [https://raw.githubusercontent.com/altran/Whydah/360f0d821d95eecb3cfd6ae3628a622b5a0c0a63/config/Docker/uas/Dockerfile]
+* UAS Dockerfile [https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/uas/Dockerfile]
 
 ####  Docker: STS configurations
 
 * STS Docker image [https://registry.hub.docker.com/u/totto/whydah-sts]
-* STS Dockerfile [https://raw.githubusercontent.com/altran/Whydah/27bf84cad672af4985e9142a129e5880d02d2984/config/Docker/sts/Dockerfile]
+* STS Dockerfile [https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/sts/Dockerfile]
 
 #### Docker: SSOLWA configurations
 
 * SSOLWA Docker image [https://registry.hub.docker.com/u/totto/whydah-ssolwa}
-* SSOLWA Dockerfile [https://raw.githubusercontent.com/altran/Whydah/930dc65bdbed653b717603e09f590603c8d57283/config/Docker/ssolwa/Dockerfile]
+* SSOLWA Dockerfile [https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/ssolwa/Dockerfile]
 
 ####  Docker: UAWA configurations
 
 * UAWA Docker image [https://registry.hub.docker.com/u/totto/whydah-uawa]
-* UAWA Dockerfile [https://raw.githubusercontent.com/altran/Whydah/360f0d821d95eecb3cfd6ae3628a622b5a0c0a63/config/Docker/uawa/Dockerfile]
+* UAWA Dockerfile [https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/uawa/Dockerfile]
 
 
 ### Ansible:  Ansible Whydah provisioning
@@ -92,7 +92,7 @@ To make it easy to adopt and evolve Whydah components, we'll make ready-to use D
 For those who prefer using Ansible to provision solutions, we suggest that you fork our general 
 ansible provisioning repository on github and adjust it according to youur needs
 
-* [https://github.com/altran/Whydah-Provisioning]
+* [https://github.com/cantara/Whydah-Provisioning]
 
 
 
