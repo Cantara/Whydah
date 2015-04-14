@@ -10,7 +10,9 @@ Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh
 cd ../Whydah-UserIdentityBackend
 Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
 
-
+sleep 15
+echo ""
+echo ""
 echo "To test point your browser to:  http://localhost:9997/sso/login"
 
 
