@@ -1,12 +1,12 @@
 #!/bin/sh
 cd ../Whydah-SecurityTokenService
-./start-service.sh VERSION=FROM_SOURCE IAM_MODE=TEST_LOCALHOST
+VERSION=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
 cd ../Whydah-SSOLoginWebApp
-./start-service.sh VERSION=FROM_SOURCE IAM_MODE=TEST_LOCALHOST
+VERSION=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
 cd ../Whydah-UserAdminService
-./start-service.sh VERSION=FROM_SOURCE IAM_MODE=TEST_LOCALHOST
+VERSION=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
 cd ../Whydah-UserAdminWebApp
-./start-service.sh VERSION=FROM_SOURCE IAM_MODE=TEST_LOCALHOST
+VERSION=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
 cd ../Whydah-UserIdentityBackend
-./start-service.sh VERSION=FROM_SOURCE IAM_MODE=TEST_LOCALHOST
+VERSION=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
 
