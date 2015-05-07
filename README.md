@@ -3,6 +3,8 @@ Whydah
 
 Whydah is an Identity and Single Sign-On solution that provides advanced role-based access control and flexible integration's.  This is the top-level repository for the Whydah components.
 
+![Fork me on GitHub](https://raw.githubusercontent.com/Cantara/Whydah/master/images/forkme_right_red_aa0000.png)
+
 
 ### Quick set-up (Using Docker on local machine)
 
@@ -41,11 +43,11 @@ String usertoken = Request.Post("https://sso.whydah.net/sso/user/"+appTokenID+"/
 // That's all you need to get a full user database, IAM/SSO, Facebook/OAUTH support ++
 boolean hasEmployeeRoleInMyApp = $(usertoken).xpath("/usertoken/application[@ID="+myAppId+"]/role[@name=\"Employee\"");
 ```
-![Sequence Diagram](https://raw.githubusercontent.com/altran/Whydah/master/images/Integration%20-%20simple%20standalone.png)
+![Sequence Diagram](https://raw.githubusercontent.com/cantara/Whydah/master/images/Integration%20-%20simple%20standalone.png)
 
 
 
-![Architectural Overview](https://raw.githubusercontent.com/altran/Whydah/master/images/Whydah%20infrastructure.png)
+![Architectural Overview](https://raw.githubusercontent.com/cantara/Whydah/master/images/Whydah%20infrastructure.png)
 
 
 
