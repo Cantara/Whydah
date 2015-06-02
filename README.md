@@ -112,7 +112,7 @@ ansible provisioning repository on github and adjust it according to youur needs
 
 ### Documentation:
 
-* Overview [http://getwhydah.com/]
+* Overview - [http://getwhydah.com/]
 * Installation, Architecture and Development 
 *       [https://wiki.cantara.no/display/whydah/Whydah+Home]
 * Source Code 
