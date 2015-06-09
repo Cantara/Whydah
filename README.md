@@ -9,6 +9,9 @@ Whydah is an Identity and Single Sign-On solution that provides advanced role-ba
 ### Quick set-up (Using Docker on local machine)
 
 * Install docker
+```
+wget -qO- https://get.docker.com/ | sh
+```
 * Start Whydah
 ```
 sudo docker run -it -p 80:9999 -p 9990:9990 -p 9995:9995 -p 9996:9996 -p 9997:9997 -p 9998:9998  cantara/whydah 
