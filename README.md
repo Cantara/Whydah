@@ -7,7 +7,7 @@ Whydah is an Identity and Single Sign-On solution that provides advanced role-ba
 
 ### Build status:
 
-SSOLoginWebApp ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp)
+SSOLoginWebApp: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp)
 SecurityTokenService: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService)
 UserAdminService: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService)
 UserIdentityBackend: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend)
