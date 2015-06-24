@@ -5,6 +5,9 @@ Whydah is an Identity and Single Sign-On solution that provides advanced role-ba
 
 ![Fork me on GitHub](https://raw.githubusercontent.com/Cantara/Whydah/master/images/forkme_right_red_aa0000.png)
 
+Build status:
+Whydah-UserIdentityBackend ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend)
+
 
 ### Quick set-up (Using Docker on local machine)
 
