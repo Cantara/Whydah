@@ -77,10 +77,10 @@ RUN su -  UserIdentityBackend -c "mkdir /home/UserIdentityBackend/testdata"
 COPY testdata /home/UserIdentityBackend/testdata
 
 RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/start-service.sh &"
-RUN chmod 755 /home/UserIdentityBackend/*.sh
 
 ## New Constretto start
 ADD start-service-uib-dev-contretto.sh /home/UserIdentityBackend/start-service.sh
+RUN chmod 755 /home/UserIdentityBackend/*.sh
 
 ## Install Apache and set up proxypasses
 RUN yum install -y httpd
