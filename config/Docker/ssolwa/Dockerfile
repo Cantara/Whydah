@@ -17,10 +17,10 @@ RUN /usr/sbin/sshd-keygen
 RUN adduser  SSOLoginWebApp
 
 ## Install SSOLoginWebApp
-RUN su -  SSOLoginWebApp -c "/usr/bin/wget -O update-service.sh -q -N  https://raw.githubusercontent.com/altran/Whydah-SSOLoginWebApp/master/update-service.sh"
-RUN su -  SSOLoginWebApp -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/altran/Whydah-SSOLoginWebApp/master/start-service.sh"
+RUN su -  SSOLoginWebApp -c "/usr/bin/wget -O update-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-SSOLoginWebApp/master/update-service.sh"
+RUN su -  SSOLoginWebApp -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-SSOLoginWebApp/master/start-service.sh"
 RUN chmod 755 /home/SSOLoginWebApp/*.sh 
-RUN su -  SSOLoginWebApp -c "/usr/bin/wget -O ssologinservice.PROD.properties -q -N  https://raw.githubusercontent.com/altran/Whydah-SSOLoginWebApp/master/src/main/resources/ssologinwebapp.TEST_LOCALHOST.properties"
+RUN su -  SSOLoginWebApp -c "/usr/bin/wget -O ssologinservice.PROD.properties -q -N  https://raw.githubusercontent.com/cantara/Whydah-SSOLoginWebApp/master/src/main/resources/ssologinwebapp.TEST_LOCALHOST.properties"
 RUN su - SSOLoginWebApp -c "/home/SSOLoginWebApp/update-service.sh"
 #RUN su - SSOLoginWebApp -c "/home/SSOLoginWebApp/start-service.sh &"
 
