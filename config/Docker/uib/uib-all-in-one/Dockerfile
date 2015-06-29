@@ -18,6 +18,7 @@ ENV HOME=/home/$USER
 RUN useradd -d "$HOME" -u 500 -m -s /bin/bash $USER
 
 ## Install UserIdentityBackend
+COPY testdata/* $HOME/testdata/
 COPY toRoot/* $HOME/
 RUN chown -R $USER:$USER $HOME
 RUN chmod 755 $HOME/*.sh
