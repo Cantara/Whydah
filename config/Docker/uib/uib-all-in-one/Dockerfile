@@ -34,5 +34,5 @@ RUN ln -s ../sites-available/whydah.conf /etc/apache2/sites-enabled/whydah.conf
 ## Set up start of services
 RUN mkdir -p /var/log/supervisor
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-EXPOSE 22 80 443 9995
+EXPOSE 22 80 9999
 CMD ["/usr/bin/supervisord"]
