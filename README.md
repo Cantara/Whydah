@@ -34,8 +34,17 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:99
 
 ### Client code example
 
-*Example using Apache HTTP Components Fluent API and jOOX Fluent API*
+## Example code, with automatic session renewwal
+```java
+        WhydahApplicationSession aSession = new WhydahApplicationSssion(uTokenSUri, appId, appSecret);
+        WhydahUserSession uSession = new WhydahUserSession(aSession,userCredential);
+        if (uSession.hasRole("WhydahAdmin"){
+          // do admin privilege operation
+        }
 ```
+
+*Example using Apache HTTP Components Fluent API and jOOX Fluent API*
+```java
 //  Execute a POST to authenticate my application
 String appToken = Request.Post("https://sso.whydah.net/sso/logon")
         .bodyForm(Form.form().add("applicationcredential", myAppCredential).build())
