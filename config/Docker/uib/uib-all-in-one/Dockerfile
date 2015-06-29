@@ -28,7 +28,7 @@ RUN su - $USER -c "$HOME/update-service.sh"
 RUN a2enmod proxy_http
 RUN mkdir -p /var/lock/apache2 /var/run/apache2 /var/run/sshd
 RUN rm /etc/apache2/sites-enabled/000-default.conf
-RUN /usr/bin/wget -O /etc/apache2/sites-available/whydah.conf -q -N https://raw.githubusercontent.com/altran/Whydah/master/config/apache/whydah.conf
+RUN /usr/bin/wget -O /etc/apache2/sites-available/whydah.conf -q -N https://raw.githubusercontent.com/cantara/Whydah/master/config/apache/whydah.conf
 RUN ln -s ../sites-available/whydah.conf /etc/apache2/sites-enabled/whydah.conf
 
 ## Set up start of services
