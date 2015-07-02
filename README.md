@@ -32,9 +32,9 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:99
 * Docker hub [https://registry.hub.docker.com/repos/cantara/]
 
 
-### Client code example
+### Some client code examples
 
-## Example code, Whydaj Java SDK with automatic session management threads
+## Example code, Whydah Java SDK with automatic session management threads
 ```java
 WhydahApplicationSession aSession = new WhydahApplicationSssion(uTokenSUri, appId, appSecret);
 WhydahUserSession uSession = new WhydahUserSession(aSession,userCredential);
@@ -43,7 +43,7 @@ if (uSession.hasRole("WhydahAdmin"){
 }
 ```
 
-*Example RAW HTTP using Apache HTTP Components Fluent API and jOOX Fluent API*
+## Example RAW HTTP using Apache HTTP Components Fluent API and jOOX Fluent API
 ```java
 //  Execute a POST to authenticate my application
 String appToken = Request.Post("https://sso.whydah.net/sso/logon")
