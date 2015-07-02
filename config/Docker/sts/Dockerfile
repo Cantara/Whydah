@@ -19,17 +19,17 @@ RUN adduser  SecurityTokenService
 
 
 ## Install SecurityTokenService
-RUN su -  SecurityTokenService -c "/usr/bin/wget -O update-service.sh -q -N  https://raw.githubusercontent.com/altran/Whydah-SecurityTokenService/master/update-service.sh"
-RUN su -  SecurityTokenService -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/altran/Whydah-SecurityTokenService/master/start-service.sh"
+RUN su -  SecurityTokenService -c "/usr/bin/wget -O update-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-SecurityTokenService/master/update-service.sh"
+RUN su -  SecurityTokenService -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-SecurityTokenService/master/start-service.sh"
 RUN chmod 755 /home/SecurityTokenService/*.sh
-RUN su -  SecurityTokenService -c "/usr/bin/wget -O securitytokenservice.PROD.properties -q -N  https://raw.githubusercontent.com/altran/Whydah-SecurityTokenService/master/src/main/resources/securitytokenservice.TEST_LOCALHOST.properties"
+RUN su -  SecurityTokenService -c "/usr/bin/wget -O securitytokenservice.PROD.properties -q -N  https://raw.githubusercontent.com/cantara/Whydah-SecurityTokenService/master/src/main/resources/securitytokenservice.TEST_LOCALHOST.properties"
 RUN su - SecurityTokenService -c "/home/SecurityTokenService/update-service.sh"
 #RUN su - SecurityTokenService -c "/home/SecurityTokenService/start-service.sh &"
 
 
 ## Install Apache and set up proxypasses
 RUN yum install -y httpd
-RUN /usr/bin/wget -O /etc/httpd/conf.d/whydah.conf -q -N https://raw.githubusercontent.com/altran/Whydah/master/config/apache/whydah.conf
+RUN /usr/bin/wget -O /etc/httpd/conf.d/whydah.conf -q -N https://raw.githubusercontent.com/cantara/Whydah/master/config/apache/whydah.conf
 
 
 ## Set up start of services

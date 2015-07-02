@@ -1,7 +1,7 @@
 Whydah
 ======
 
-Whydah is an Identity and Single Sign-On solution that provides advanced role-based access control and flexible integration's.  This is the top-level repository for the Whydah components.
+Whydah is an Identity and Single Sign-On solution. Whydah that provides user and application management, advanced role-based access control and flexible integration's.  This is the top-level repository for the Whydah components.
 
 ![Fork me on GitHub](https://raw.githubusercontent.com/Cantara/Whydah/master/images/forkme_right_red_aa0000.png)
 
@@ -24,7 +24,7 @@ wget -qO- https://get.docker.com/ | sh
 ```
 * Start Whydah
 ```
-sudo docker run -it -p 80:9999 -p 9990:9990 -p 9995:9995 -p 9996:9996 -p 9997:9997 -p 9998:9998  cantara/whydah 
+sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:9996 -p 9997:9997 -p 9998:9998  cantara/whydah 
 ```
 * Go to Whydah [http://localhost/sso/welcome]  (admin/whydahadmin)
 
@@ -32,10 +32,19 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9995:9995 -p 9996:9996 -p 9997:99
 * Docker hub [https://registry.hub.docker.com/repos/cantara/]
 
 
-### Client code example
+### Some client code examples
 
-*Example using Apache HTTP Components Fluent API and jOOX Fluent API*
+## Example code, Whydah Java SDK with automatic session management threads
+```java
+WhydahApplicationSession aSession = new WhydahApplicationSssion(uTokenSUri, appId, appSecret);
+WhydahUserSession uSession = new WhydahUserSession(aSession,userCredential);
+if (uSession.hasRole("WhydahAdmin"){
+  // do admin privilege operation
+}
 ```
+
+## Example RAW HTTP using Apache HTTP Components Fluent API and jOOX Fluent API
+```java
 //  Execute a POST to authenticate my application
 String appToken = Request.Post("https://sso.whydah.net/sso/logon")
         .bodyForm(Form.form().add("applicationcredential", myAppCredential).build())

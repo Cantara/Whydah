@@ -18,17 +18,17 @@ RUN adduser  UserAdminWebApp
 
 
 ## Install UserAdminWebApp
-RUN su -  UserAdminWebApp -c "/usr/bin/wget -O update-service.sh -q -N https://raw.githubusercontent.com/altran/Whydah-UserAdminWebApp/master/update-service.sh"
-RUN su -  UserAdminWebApp -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/altran/Whydah-UserAdminWebApp/master/start-service.sh"
+RUN su -  UserAdminWebApp -c "/usr/bin/wget -O update-service.sh -q -N https://raw.githubusercontent.com/cantara/Whydah-UserAdminWebApp/master/update-service.sh"
+RUN su -  UserAdminWebApp -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-UserAdminWebApp/master/start-service.sh"
 RUN chmod 755 /home/UserAdminWebApp/*.sh
-RUN su -  UserAdminWebApp -c "/usr/bin/wget -O useradminwebapp.PROD.properties -q -N https://raw.githubusercontent.com/altran/Whydah-UserAdminWebApp/master/src/main/resources/useradminwebapp.TEST_LOCALHOST.properties"
+RUN su -  UserAdminWebApp -c "/usr/bin/wget -O useradminwebapp.PROD.properties -q -N https://raw.githubusercontent.com/cantara/Whydah-UserAdminWebApp/master/src/main/resources/useradminwebapp.TEST_LOCALHOST.properties"
 RUN su - UserAdminWebApp -c "/home/UserAdminWebApp/update-service.sh"
 #RUN su - UserAdminWebApp -c "/home/UserAdminWebApp/start-service.sh &"
 
 
 ## Install Apache and set up proxypasses
 RUN yum install -y httpd
-RUN /usr/bin/wget -O /etc/httpd/conf.d/whydah.conf -q -N https://raw.githubusercontent.com/altran/Whydah/master/config/apache/whydah.conf
+RUN /usr/bin/wget -O /etc/httpd/conf.d/whydah.conf -q -N https://raw.githubusercontent.com/cantara/Whydah/master/config/apache/whydah.conf
 
 
 ## Set up start of services
