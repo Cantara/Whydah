@@ -66,10 +66,9 @@ RUN su - UserAdminWebApp -c "/home/UserAdminWebApp/update-service.sh"
 #RUN su - UserAdminWebApp -c "/home/UserAdminWebApp/start-service.sh &"
 
 ## Install UserIdentityBackend
-RUN su -  UserIdentityBackend -c "/usr/bin/wget -O update-service.sh -q -N https://raw.githubusercontent.com/cantara/Whydah-UserIdentityBackend/master/update-service.sh"
-RUN su -  UserIdentityBackend -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-UserIdentityBackend/master/start-service.sh"
+RUN su -  UserIdentityBackend -c "/usr/bin/wget -O update-service.sh -q -N https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/uib/uib-all-in-one/toRoot/update-service.sh"
+RUN su -  UserIdentityBackend -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/uib/uib-all-in-one/toRoot/start-service.sh"
 RUN chmod 755 /home/UserIdentityBackend/*.sh
-## RUN su -  UserIdentityBackend -c "/usr/bin/wget -O useridentitybackend.PROD.properties -q -N https://raw.githubusercontent.com/cantara/Whydah-UserIdentityBackend/master/src/main/resources/useridentitybackend.TEST_LOCALHOST.properties"
 RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/update-service.sh"
 RUN su -  UserIdentityBackend -c "mkdir /home/UserIdentityBackend/bootstrapdata"
 RUN su -  UserIdentityBackend -c "mkdir /home/UserIdentityBackend/bootstrapdata/ldap"
