@@ -5,6 +5,9 @@ Whydah is an Identity and Single Sign-On solution. Whydah that provides user and
 
 ![Fork me on GitHub](https://raw.githubusercontent.com/Cantara/Whydah/master/images/forkme_right_red_aa0000.png)
 
+### Release log
+   https://wiki.cantara.no/display/whydah/Whydah+Releases
+   
 ### Build status:
 
 SSOLoginWebApp: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp)
