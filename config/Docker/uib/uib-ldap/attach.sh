@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker exec -it openldap /bin/bash
+docker exec -it whydah-uib-ldap /bin/bash

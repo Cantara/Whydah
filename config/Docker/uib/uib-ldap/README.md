@@ -9,6 +9,11 @@ Builds on this guide https://wiki.cantara.no/display/whydah/Install+OpenLDAP+for
 $ ./build.sh
 ```
 
+### Create data volume container
+```
+$ ./create-data.sh
+```
+
 ### Run Docker image
 ```
 $ ./run.sh

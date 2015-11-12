@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-echo stopping openldap
-docker stop openldap
-echo removing openldap
-docker rm openldap
-echo list active docker containers
-docker ps
+echo stopping whydah-uib-ldap
+docker stop whydah-uib-ldap
+echo removing whydah-uib-ldap
+docker rm whydah-uib-ldap
