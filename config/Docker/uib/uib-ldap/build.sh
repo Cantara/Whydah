@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker build -t kimcs/whydah-openldap .
+docker build -t cantara/whydah-uib-ldap .
