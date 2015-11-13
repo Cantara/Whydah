@@ -44,7 +44,9 @@ adding new entry "dc=mycompany,dc=com"
 
 adding new entry "ou=users,dc=mycompany,dc=com"
 
-adding new entry "cn=uibadmin,ou=users,dc=mycompany,dc=com"
+adding new entry "ou=administrators,dc=mycompany,dc=com"
+
+adding new entry "cn=uibadmin,ou=administrators,dc=mycompany,dc=com"
 
 SASL/EXTERNAL authentication started
 SASL username: gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth
@@ -63,7 +65,7 @@ $ ldapsearch -D cn=admin,dc=mycompany,dc=com -w ubersecret -p 13389 -h localhost
 ```
 Also, check that it's possible to connect using the uibadmin user.
 ```
-$ ldapsearch -D cn=uibadmin,ou=users,dc=mycompany,dc=com -w mysecret123 -p 13389 -h localhost -b "dc=mycompany,dc=com" -s sub "(objectclass=*)"
+$ ldapsearch -D cn=uibadmin,ou=administrators,dc=mycompany,dc=com -w mysecret123 -p 13389 -h localhost -b "dc=mycompany,dc=com" -s sub "(objectclass=*)"
 ```
 Both these commands should produce an output similar to the following:
 ```
@@ -88,8 +90,15 @@ objectClass: top
 objectClass: organizationalUnit
 ou: users
 
-# uibadmin, users, mycompany.com
-dn: cn=uibadmin,ou=users,dc=mycompany,dc=com
+# administrators, mycompany.com
+dn: ou=administrators,dc=mycompany,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: users
+ou: administrators
+
+# uibadmin, administrators, mycompany.com
+dn: cn=uibadmin,ou=administrators,dc=mycompany,dc=com
 objectClass: top
 objectClass: inetOrgPerson
 objectClass: organizationalPerson
@@ -105,14 +114,14 @@ userPassword:: e1NTSEF9SHAxVi9FN0ZlbFR5Z3hNM05kVTNpUEdTUmdkV0RMREo=
 search: 2
 result: 0 Success
 
-# numResponses: 4
-# numEntries: 3
+# numResponses: 5
+# numEntries: 4
 ```
 
 ### Connect from UserIdentityBackend
 To connect from a locally running UIB to this OpenLDAP container as the uibadmin user you would enter the following information in uib.properties file:
 ```
 ldap.primary.url=ldap://localhost:13389/dc=mycompany,dc=com
-ldap.primary.admin.principal=cn=uibadmin,ou=users,dc=mycompany,dc=com
+ldap.primary.admin.principal=cn=uibadmin,ou=administrators,dc=mycompany,dc=com
 ldap.primary.admin.credentials=mysecret123
 ```

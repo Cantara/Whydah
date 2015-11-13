@@ -117,7 +117,12 @@ objectClass: top
 objectClass: organizationalUnit
 ou: users
 
-dn: cn=$3,ou=users,$2
+dn: ou=administrators,$2
+objectClass: top
+objectClass: organizationalUnit
+ou: users
+
+dn: cn=$3,ou=administrators,$2
 objectClass: top
 objectClass: inetOrgPerson
 objectClass: organizationalPerson
