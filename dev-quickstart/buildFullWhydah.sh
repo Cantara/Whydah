@@ -6,14 +6,14 @@
 #                  We are investigating the issue to resolv it
 #
 
-cd ../Whydah-SecurityTokenService
+cd sts
 mvn clean package
-cd ../Whydah-SSOLoginWebApp
+cd ../ssologin
 mvn clean package
-cd ../Whydah-UserAdminService
+cd ../uas
 mvn clean package
-cd ../Whydah-UserAdminWebApp
+cd ../uawa
 mvn clean package
-cd ../Whydah-UserIdentityBackend
+cd ../uib
 mvn clean package
 

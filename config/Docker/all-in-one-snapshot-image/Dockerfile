@@ -53,7 +53,7 @@ RUN su - TestWebApp -c "/home/TestWebApp/update-service.sh"
 RUN su -  UserAdminService -c "/usr/bin/wget -O update-service.sh -q -N https://raw.githubusercontent.com/cantara/Whydah-UserAdminService/master/update-service.sh"
 RUN su -  UserAdminService -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-UserAdminService/master/start-service.sh"
 RUN chmod 755 /home/UserAdminService/*.sh
-RUN su -  UserAdminService -c "/usr/bin/wget -O useradminservice.PROD.properties -q -N https://raw.githubusercontent.com/cantara/Whydah-UserAdminService/master/src/main/resources/useradminservice.TEST_LOCALHOST.properties"
+#RUN su -  UserAdminService -c "/usr/bin/wget -O useradminservice.PROD.properties -q -N https://raw.githubusercontent.com/cantara/Whydah-UserAdminService/master/src/main/resources/useradminservice.TEST_LOCALHOST.properties"
 RUN su - UserAdminService -c "/home/UserAdminService/update-service.sh"
 #RUN su - UserAdminService -c "/home/UserAdminService/start-service.sh &"
 

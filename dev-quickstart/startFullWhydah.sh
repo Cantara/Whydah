@@ -6,16 +6,16 @@
 #                  We are investigating the issue to resolv it
 #
 
-cd ../Whydah-SecurityTokenService
+cd sts
 Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
-cd ../Whydah-SSOLoginWebApp
+cd ../ssologin
 Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
-cd ../Whydah-UserAdminService
+cd ../uas
+Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=dev' ./start-service.sh 
+cd ../uawa
 Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
-cd ../Whydah-UserAdminWebApp
-Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
-cd ../Whydah-UserIdentityBackend
-Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
+cd ../uib
+Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=dev' ./start-service.sh 
 
 sleep 15
 echo ""
