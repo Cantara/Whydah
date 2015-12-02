@@ -13,13 +13,14 @@ For a high-level feature description, see getwhydah.com
    
 ### Build status:
 
-SSOLoginWebApp: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp) <br />
-SecurityTokenService: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService) <br />
-UserAdminService: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService) <br />
-UserIdentityBackend: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend) <br />
-UserAdminWebApp: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminWebApp) <br />
-Java-SDK: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Java-SDK) <br />
-TestWebApp: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TestWebApp) <br />
+![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp) - Whydah-SSOLoginWebApp  <br />
+![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService) - Whydah-SecurityTokenService <br />
+![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService) - Whydah-UserAdminService  <br />
+![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend) - Whydah-UserIdentityBackend  <br />
+![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminWebApp) - Whydah-UserAdminWebApp  <br />
+![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Java-SDK) - Whydah-Java-SDK  <br />
+![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TypeLib) - Whydah-TypeLib  <br />
+![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TestWebApp) - Whydah-TestWebApp  <br />
 
 
 ### Quick set-up (Using Docker on local machine)
@@ -30,6 +31,7 @@ wget -qO- https://get.docker.com/ | sh
 ```
 * Start Whydah
 ```
+sudo docker pull whydah/whydah-all-in-one-image
 sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:9996 -p 9997:9997 -p 9998:9998  whydah/whydah-all-in-one-image 
 ```
 * Go to Whydah [http://localhost/sso/welcome]  (admin/whydahadmin)
