@@ -13,14 +13,13 @@ For a high-level feature description, see getwhydah.com
    
 ### Build status:
 
-SSOLoginWebApp: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp)
-SecurityTokenService: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService)
-
-UserAdminService: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService)
-UserIdentityBackend: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend)
-UserAdminWebApp: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminWebApp)
-Java-SDK: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Java-SDK)
-TestWebApp: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TestWebApp)
+SSOLoginWebApp: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp) <br />
+SecurityTokenService: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService) <br />
+UserAdminService: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService) <br />
+UserIdentityBackend: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend) <br />
+UserAdminWebApp: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminWebApp) <br />
+Java-SDK: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Java-SDK) <br />
+TestWebApp: ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TestWebApp) <br />
 
 
 ### Quick set-up (Using Docker on local machine)
