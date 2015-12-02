@@ -9,7 +9,7 @@ For a high-level feature description, see getwhydah.com
 ![Fork me on GitHub](https://raw.githubusercontent.com/Cantara/Whydah/master/images/forkme_right_red_aa0000.png)
 
 ### Release log
-   https://wiki.cantara.no/display/whydah/Whydah+Releases
+   (https://wiki.cantara.no/display/whydah/Whydah+Releases)
    
 ### Build status:
 
@@ -44,31 +44,26 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:99
 
 ### Example code, Whydah Java SDK with automatic session management threads
 ```java
-WhydahApplicationSession aSession = new WhydahApplicationSssion(uTokenSUri, appId, appSecret);
+WhydahApplicationSession aSession = new WhydahApplicationSssion(stsURL, appCtedential);
 WhydahUserSession uSession = new WhydahUserSession(aSession,userCredential);
-if (uSession.hasRole("WhydahAdmin"){
+if (uSession.hasRole("MyAppRole"){
   // do admin privilege operation
 }
 ```
 
-### Example RAW HTTP using Apache HTTP Components Fluent API and jOOX Fluent API
+### Example RAW HTTP(S) using Apache HTTP Components Fluent API and jOOX Fluent API
 ```java
 //  Execute a POST to authenticate my application
-String appToken = Request.Post("https://sso.whydah.net/sso/logon")
-        .bodyForm(Form.form().add("applicationcredential", myAppCredential).build())
+String aToken = Request.Post("https://sso.whydah.net/sso/logon")
+        .bodyForm(Form.form().add("applicationcredential", myAppCred).build())
         .execute().returnContent().asBytes();
 
-//  authenticate with username and password (user credential)
-String usertoken = Request.Post("https://sso.whydah.net/sso/user/"+appTokenID+"/"+new UserTicket(UUID.randomUUID()).toString()+"/usertoken/")
-        .bodyForm(Form.form().add("apptoken", appToken)
-        .add("usercredential", new UserCredential(username,password).asXML()).build())
+//  authenticate with username and password (UserCredential)
+String uToken = Request.Post("https://sso.whydah.net/sso/user/"+appTokenID+"/"+"/usertoken/")
+        .bodyForm(Form.form().add("apptoken", aToken)
+        .add("usercredential", new UserCredential(username,password).toXML()).build())
         .execute().returnContent().asBytes();
 
-//  Execute a POST  to SecurityTokenService with userticket to get usertoken
-String usertoken = Request.Post("https://sso.whydah.net/sso/user/"+appTokenID+"/get_usertoken_by_userticket/")
-        .bodyForm(Form.form().add("apptoken", appToken)
-        .add("userticket", userTicket).build())
-        .execute().returnContent().asBytes();
 
 // That's all you need to get a full user database, IAM/SSO, Facebook/OAUTH support ++
 boolean hasEmployeeRoleInMyApp = $(usertoken).xpath("/usertoken/application[@ID="+myAppId+"]/role[@name=\"Employee\"");
