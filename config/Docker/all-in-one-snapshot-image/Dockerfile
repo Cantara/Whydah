@@ -10,7 +10,7 @@ RUN yum install -y wget
 # Install sshd - should probably be fortified
 RUN yum install -y openssh-server
 RUN mkdir /var/run/sshd
-RUN echo 'root:kjempehemmelig3' | chpasswd
+RUN echo 'root:kjempehemmelig4' | chpasswd
 RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 RUN echo "export VISIBLE=now" >> /etc/profile
