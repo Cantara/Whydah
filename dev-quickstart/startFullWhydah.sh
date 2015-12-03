@@ -8,14 +8,14 @@
 
 cd sts
 Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
-cd ../ssologin
+cd ../ssolwa
 Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
 cd ../uas
-Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=dev' ./start-service.sh 
+Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=DEV' ./start-service.sh 
 cd ../uawa
 Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
 cd ../uib
-Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=dev' ./start-service.sh 
+Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=DEV' ./start-service.sh 
 
 sleep 15
 echo ""
