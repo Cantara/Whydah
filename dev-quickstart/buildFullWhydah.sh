@@ -15,5 +15,5 @@ mvn clean package
 cd ../uawa
 mvn clean package
 cd ../uib
-mvn clean package
+mvn -DskipTests=true clean package
 
