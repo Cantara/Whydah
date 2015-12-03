@@ -8,7 +8,7 @@
 
 cd sts
 mvn clean package
-cd ../ssologin
+cd ../ssolwa
 mvn clean package
 cd ../uas
 mvn clean package
