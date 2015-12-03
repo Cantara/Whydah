@@ -3,6 +3,7 @@
 git clone https://github.com/Cantara/Whydah-UserIdentityBackend.git uib
 cd uib
 ln -s src/main/resources/prodInitData/ prodInitData
+ln -s src/test/resources/testdata/ testdata
 cd ..
 git clone https://github.com/Cantara/Whydah-SecurityTokenService.git sts
 git clone https://github.com/Cantara/Whydah-SSOLoginWebApp.git ssolwa
