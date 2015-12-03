@@ -2,9 +2,9 @@
 FROM azul/zulu-openjdk-centos:latest
 MAINTAINER Totto <totto@totto.org>
 RUN yum install -y yum-cron 
-RUN yum -y update
+# RUN yum -y update
 RUN yum makecache fast
-RUN yum install -y wget
+RUN yum install -y wget httpd
 
 
 # Install sshd - should probably be fortified
