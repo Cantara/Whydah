@@ -33,6 +33,9 @@ wget -qO- https://get.docker.com/ | sh
 ```
 sudo docker pull whydah/whydah-all-in-one-image
 sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:9996 -p 9997:9997 -p 9998:9998  whydah/whydah-all-in-one-image 
+## Start and debug whydah
+sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:9996 -p 9997:9997 -p 9998:9998  whydah/whydah-all-in-one-image /bin/bash
+# run ./start_whydah.sh in image
 ```
 * Go to Whydah [http://localhost/sso/welcome]  (admin/whydahadmin)
 
