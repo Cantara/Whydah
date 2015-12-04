@@ -91,12 +91,16 @@ RUN /usr/bin/wget -O /etc/httpd/conf.d/whydah.conf -q -N https://raw.githubuserc
 
 
 ## Set up start of services
-
 RUN yum -y install python-setuptools
 RUN easy_install supervisor
 RUN mkdir -p /var/log/supervisor
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN ln -s /etc/supervisor/conf.d/supervisord.conf /usr//etc/supervisord.conf
+
+## Simple start-all for working inside the image
+RUN echo "/usr/bin/supervisord &" >/start_whydah.sh
+RUN chmod 755 /start_whydah.sh
+
 #EXPOSE 22 80 
 CMD ["/usr/bin/supervisord"]
 # RUN httpd
