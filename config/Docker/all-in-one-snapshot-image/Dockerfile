@@ -76,6 +76,8 @@ RUN su -  UserIdentityBackend -c "mkdir /home/UserIdentityBackend/bootstrapdata/
 RUN su -  UserIdentityBackend -c "mkdir /home/UserIdentityBackend/bootstrapdata/lucene"
 RUN su -  UserIdentityBackend -c "mkdir /home/UserIdentityBackend/testdata"
 COPY testdata /home/UserIdentityBackend/testdata
+RUN su -  UserIdentityBackend -c "/usr/bin/wget -O useridentity.override.properties -q -N  https://raw.githubusercontent.com/Cantara/Whydah-UserIdentityBackend/master/useridentitybackend.override.properties"
+COPY testdata /home/UserIdentityBackend/prodInitData
 
 RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/start-service.sh &"
 
