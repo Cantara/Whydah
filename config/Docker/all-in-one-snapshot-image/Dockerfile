@@ -95,7 +95,7 @@ RUN yum -y install python-setuptools
 RUN easy_install supervisor
 RUN mkdir -p /var/log/supervisor
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-RUN ln -s /etc/supervisor/conf.d/supervisord.conf /usr//etc/supervisord.conf
+RUN ln -s /etc/supervisor/conf.d/supervisord.conf /usr/etc/supervisord.conf
 
 ## Simple start-all for working inside the image
 RUN echo "/usr/bin/supervisord &" >/start_whydah.sh
