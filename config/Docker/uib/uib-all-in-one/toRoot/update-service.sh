@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Script to download deployment unit from a Maven artifact repository.
 
 releaseRepo=http://mvnrepo.cantara.no/content/repositories/releases
