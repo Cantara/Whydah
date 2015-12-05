@@ -69,7 +69,8 @@ String uToken = Request.Post("https://sso.whydah.net/sso/user/"+appTokenID+"/"+"
 
 
 // That's all you need to get a full user database, IAM/SSO, Facebook/OAUTH support ++
-boolean hasEmployeeRoleInMyApp = $(usertoken).xpath("/usertoken/application[@ID="+myAppId+"]/role[@name=\"Employee\"");
+boolean hasEmployeeRoleInMyApp = $(usertoken)
+        .xpath("/usertoken/application[@ID="+myAppId+"]/role[@name=\"Employee\"");
 ```
 ![Sequence Diagram](https://raw.githubusercontent.com/cantara/Whydah/master/images/Integration%20-%20simple%20standalone.png)
 
