@@ -107,6 +107,7 @@ ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ## Simple start-all for working inside the image
 RUN echo "/usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf &" >/root/start_whydah.sh
 RUN chmod 755 /root/start_whydah.sh
+RUN ln -s /usr/local/java/bin/java /usr/bin/java
 
 #EXPOSE 22 80 
 CMD ["/usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf"]
