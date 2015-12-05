@@ -10,5 +10,4 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:99
 # then run ./start_whydah
 ```
 
-* Test the image by pointing a browser to [http://localhost:9997/sso/welcome]   (user: admin  pw: whydahadmin)
-
+* Go to Whydah [http://localhost:9997/sso/welcome]  (admin/whydahadmin)
