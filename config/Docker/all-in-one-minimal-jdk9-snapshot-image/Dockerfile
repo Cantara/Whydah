@@ -110,5 +110,4 @@ RUN chmod 755 /root/start_whydah.sh
 RUN ln -s /usr/local/java/bin/java /usr/bin/java
 
 #EXPOSE 22 80 
-CMD ["/usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf"]
-# RUN httpd
+CMD ["/root/start_whydah.sh"]
