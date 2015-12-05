@@ -230,7 +230,7 @@
     "description": "The SSO / WebFrontend module of the Whydah IAM/SSO",
     "company" : "Cantara",
     "tags" : "HIDDEN, JURISDICTION_NORWAY",
-    "applicationUrl": "https://whydahdev.cantara.no/sso/",
+    "applicationUrl": "http://localhost:9997/sso/",
     "logoUrl": "https://whydahdev.cantara.no/useradmin/img/whydah.png",
     "roles": [{
       "id" : "why101",
@@ -269,7 +269,7 @@
     "description": "The back-office User Administration module of the Whydah IAM/SSO",
     "company" : "Cantara",
     "tags" : "JURISDICTION_NORWAY",
-    "applicationUrl": "https://whydahdev.cantara.no/useradmin/",
+    "applicationUrl": "http://localhost:9996/useradmin/",
     "logoUrl": "https://whydahdev.cantara.no/useradmin/img/whydah.png",
     "roles": [{
       "id" : "why101",
