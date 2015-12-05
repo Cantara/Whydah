@@ -110,5 +110,5 @@ RUN echo "/usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf &" >>/
 RUN chmod 755 /root/start_whydah.sh
 RUN ln -s /usr/local/java/bin/java /usr/bin/java
 
-#EXPOSE 22 80 
+EXPOSE 22 80 9990 9992 9995 9996 9997
 CMD ["/usr/bin/supervisord","-c","/etc/supervisor/conf.d/supervisord.conf"]
