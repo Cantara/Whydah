@@ -101,6 +101,6 @@ RUN ln -s /etc/supervisor/conf.d/supervisord.conf /usr/etc/supervisord.conf
 RUN echo "/usr/bin/supervisord &" >/start_whydah.sh
 RUN chmod 755 /start_whydah.sh
 
-#EXPOSE 22 80 
-CMD ["/usr/bin/supervisord"]
+EXPOSE 22 80 9990 9992 9995 9997 9998
+CMD ["/usr/bin/supervisord","-c","/etc/supervisor/conf.d/supervisord.conf"]
 # RUN httpd
