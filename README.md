@@ -50,7 +50,7 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:99
 ```
 
 
-* Go to Whydah [http://localhost/sso/welcome]  (admin/whydahadmin)
+* Go to Whydah http://localhost:9997/sso/welcome  (admin/whydahadmin)
 
 *Some ready-built docker images*
 * Docker hub [https://registry.hub.docker.com/repos/cantara/]
