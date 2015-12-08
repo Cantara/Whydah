@@ -3,13 +3,13 @@ Whydah
 
 Whydah is an Identity and Single Sign-On solution. Whydah that provides user and application management, advanced role-based access control and flexible integration's.  This is the top-level repository for the Whydah components.
 
-For a high-level feature description, see [http://getwhydah.com]
+For a high-level feature description, see http://getwhydah.com
 
 
 ![Fork me on GitHub](https://raw.githubusercontent.com/Cantara/Whydah/master/images/forkme_right_red_aa0000.png)
 
 ### Release log
-   (https://wiki.cantara.no/display/whydah/Whydah+Releases)
+*   https://wiki.cantara.no/display/whydah/Whydah+Releases
    
 ### Build status:
 
