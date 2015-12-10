@@ -10,6 +10,7 @@ For a high-level feature description, see http://getwhydah.com
 
 ### Release log
 *   https://wiki.cantara.no/display/whydah/Whydah+Releases
+*   Whydah 2.1-beta-1 released
    
 ### Build status:
 
