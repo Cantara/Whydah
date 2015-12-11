@@ -1,7 +1,7 @@
 Whydah
 ======
 
-!https://raw.githubusercontent.com/Cantara/Whydah/master/images/getwhydah.png!
+!(https://raw.githubusercontent.com/Cantara/Whydah/master/images/getwhydah.png)
 
 Whydah is an Identity and Single Sign-On solution. Whydah that provides user and application management, advanced role-based access control and flexible integration's.  This is the top-level repository for the Whydah components.
 
