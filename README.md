@@ -115,31 +115,14 @@ To make it easy to adopt and evolve Whydah components, we'll make ready-to use D
 * UIB all-in-one dockerfile  
    * https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/uib/uib-all-in-one/Dockerfile
 
-####  Docker: UAS configurations
+####  Docker configurations
 
-* UAS Docker image 
-   * https://registry.hub.docker.com/u/cantara/whydah-uas
 * UAS Dockerfile 
    * https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/uas/Dockerfile
-
-####  Docker: STS configurations
-
-* STS Docker image 
-   * https://registry.hub.docker.com/u/cantara/whydah-sts
 * STS Dockerfile 
    * https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/sts/Dockerfile
-
-#### Docker: SSOLWA configurations
-
-* SSOLWA Docker image 
-   * https://registry.hub.docker.com/u/cantara/whydah-ssolwa
 * SSOLWA Dockerfile 
    * https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/ssolwa/Dockerfile
-
-####  Docker: UAWA configurations
-
-* UAWA Docker image 
-   * https://registry.hub.docker.com/u/cantara/whydah-uawa
 * UAWA Dockerfile 
    * https://raw.githubusercontent.com/Cantara/Whydah/master/config/Docker/uawa/Dockerfile
 
