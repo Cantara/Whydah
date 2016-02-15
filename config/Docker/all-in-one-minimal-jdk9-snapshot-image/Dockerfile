@@ -1,5 +1,5 @@
 # This is a comment
-FROM cantara/zulu9-minimal
+FROM cantara/alpine-zulu-jdk9
 MAINTAINER Totto <totto@totto.org>
 RUN apk update
 #RUN yum install -y yum-cron 
