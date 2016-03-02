@@ -1,0 +1,5 @@
+#userId, applicationId, applicationName, organizationName, roleName, roleValue
+admin, 2219, UserAdminWebApplication, Support, WhydahUserAdmin, 1
+admin, 2215, SSOLoginWebApp, Cantara, WhydahUserAdmin, 1
+admin, 100, ACS, Support, Employee, 1
+erik.drolshammer, 19, UserAdminWebApplication, Developer, WhydahUserAdmin, 1
