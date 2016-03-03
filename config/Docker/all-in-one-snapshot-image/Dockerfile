@@ -1,5 +1,5 @@
 # This is a comment
-FROM azul/zulu-openjdk-centos:latest
+FROM cantara/debian-sid-zulu-jdk9
 MAINTAINER Totto <totto@totto.org>
 # RUN yum install -y yum-cron 
 # RUN yum -y update
