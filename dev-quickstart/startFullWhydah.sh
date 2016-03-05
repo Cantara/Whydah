@@ -17,7 +17,13 @@ Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh
 cd ../uib
 Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=DEV' ./start-service.sh 
 
+cd ../crmservice
+Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=DEV' ./start-service.sh 
+cd ../statisticsservice
+Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=DEV' ./start-service.sh 
+
 sleep 15
+
 echo ""
 echo ""
 echo "To test point your browser to:  http://localhost:9997/sso/welcome   u:useradmin pw:useradmin567"
