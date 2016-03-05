@@ -17,3 +17,5 @@ mvn clean package
 cd ../uib
 mvn -DskipTests=true clean package
 
+cd ../crmservice
+mvn clean package
