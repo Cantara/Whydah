@@ -9,4 +9,6 @@ git clone https://github.com/Cantara/Whydah-SecurityTokenService.git sts
 git clone https://github.com/Cantara/Whydah-SSOLoginWebApp.git ssolwa
 git clone https://github.com/Cantara/Whydah-UserAdminService.git uas
 git clone https://github.com/Cantara/Whydah-UserAdminWebApp.git uawa
+git clone https://github.com/Cantara/Whydah-CRMService.git crmservice
+git clone https://github.com/Cantara/Whydah-StatisticsService.git statisticsservice
 
