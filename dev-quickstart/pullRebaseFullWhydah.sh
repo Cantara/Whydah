@@ -10,3 +10,5 @@ git pull --rebase
 cd ../uib
 git pull --rebase
 
+cd ../crmservice
+git pull --rebase
