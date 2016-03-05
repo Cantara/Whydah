@@ -21,7 +21,10 @@ For a high-level feature description, see http://getwhydah.com
 ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminWebApp) - Whydah-UserAdminWebApp  <br />
 ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Java-SDK) - Whydah-Java-SDK  <br />
 ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TypeLib) - Whydah-TypeLib  <br />
+
 ![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TestWebApp) - Whydah-TestWebApp - Not 2.1 updated yet <br />
+![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-CRMService) - Whydah-CRMService  <br />
+![Build Status](http://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-StatisticsService) - Whydah-StatisticsService  <br />
 
 
 ### Quick set-up (Using Docker on local machine)
