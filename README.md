@@ -14,13 +14,13 @@ For a high-level feature description, see http://getwhydah.com
    
 ### Build status:
 
-![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-SSOLoginWebApp) - Whydah-SSOLoginWebApp  <br />
-![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-SecurityTokenService) - Whydah-SecurityTokenService <br />
-![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-UserAdminService) - Whydah-UserAdminService  <br />
-![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-UserIdentityBackend) - Whydah-UserIdentityBackend  <br />
-![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-UserAdminWebApp) - Whydah-UserAdminWebApp  <br />
-![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-Java-SDK) - Whydah-Java-SDK  <br />
-![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-TypeLib) - Whydah-TypeLib  <br />
+![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp) - Whydah-SSOLoginWebApp  <br />
+![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService) - Whydah-SecurityTokenService <br />
+![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService) - Whydah-UserAdminService  <br />
+![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend) - Whydah-UserIdentityBackend  <br />
+![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminWebApp) - Whydah-UserAdminWebApp  <br />
+![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Java-SDK) - Whydah-Java-SDK  <br />
+![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TypeLib) - Whydah-TypeLib  <br />
 
 ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-TestWebApp) - Whydah-TestWebApp - Not 2.1 updated yet <br />
 ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-CRMService) - Whydah-CRMService  <br />
