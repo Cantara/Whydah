@@ -1,14 +1,16 @@
 #!/bin/sh
 #cd ..
-git clone https://github.com/Cantara/Whydah-UserIdentityBackend.git uib
-cd uib
+git clone https://github.com/Cantara/Whydah-UserIdentityBackend.git 
+cd Whydah-UserIdentityBackend
 ln -s src/main/resources/prodInitData/ prodInitData
 ln -s src/test/resources/testdata/ testdata
 cd ..
-git clone https://github.com/Cantara/Whydah-SecurityTokenService.git sts
-git clone https://github.com/Cantara/Whydah-SSOLoginWebApp.git ssolwa
-git clone https://github.com/Cantara/Whydah-UserAdminService.git uas
-git clone https://github.com/Cantara/Whydah-UserAdminWebApp.git uawa
-git clone https://github.com/Cantara/Whydah-CRMService.git crmservice
-git clone https://github.com/Cantara/Whydah-StatisticsService.git statisticsservice
+git clone https://github.com/Cantara/Whydah-TypeLib.git 
+git clone https://github.com/Cantara/Whydah-Java-SDK.git 
+git clone https://github.com/Cantara/Whydah-SecurityTokenService.git 
+git clone https://github.com/Cantara/Whydah-SSOLoginWebApp.git 
+git clone https://github.com/Cantara/Whydah-UserAdminService.git 
+git clone https://github.com/Cantara/Whydah-UserAdminWebApp.git 
+git clone https://github.com/Cantara/Whydah-CRMService.git 
+git clone https://github.com/Cantara/Whydah-StatisticsService.git 
 
