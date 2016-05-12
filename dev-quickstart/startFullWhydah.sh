@@ -6,20 +6,21 @@
 #                  We are investigating the issue to resolv it
 #
 
-cd sts
+
+cd Whydah-SecurityTokenService
 Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
-cd ../ssolwa
+cd ../Whydah-SSOLoginWebApp
 Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
-cd ../uas
+cd ../Whydah-UserAdminService
 Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=DEV' ./start-service.sh 
-cd ../uawa
+cd ../Whydah-UserAdminWebApp
 Version=FROM_SOURCE IAM_MODE=TEST_LOCALHOST ./start-service.sh 
-cd ../uib
+cd ../Whydah-UserIdentityBackend
 Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=DEV' ./start-service.sh 
 
-cd ../crmservice
+cd ../Whydah-CRMService
 Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=DEV' ./start-service.sh 
-cd ../statisticsservice
+cd ../Whydah-StatisticsService
 Version=FROM_SOURCE env_vars='-DCONSTRETTO_TAGS=DEV' ./start-service.sh 
 
 sleep 15
