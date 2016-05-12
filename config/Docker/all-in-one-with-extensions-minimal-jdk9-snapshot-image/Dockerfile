@@ -71,17 +71,17 @@ RUN su - UserAdminService -c "/home/UserAdminService/update-service.sh"
 RUN su -  StatisticsService -c "/usr/bin/wget -O update-service.sh -q -N https://raw.githubusercontent.com/cantara/Whydah-StatisticsService/master/update-service.sh"
 RUN su -  StatisticsService -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-StatisticsService/master/start-service.sh"
 RUN chmod 755 /home/StatisticsService/*.sh
-RUN su -  StatisticsService -c "/usr/bin/wget -O statisticsservice_override.properties -q -N https://raw.githubusercontent.com/Cantara/Whydah-StatisticsServiceService/master/statisticsservice_override.properties.example"
-RUN su - UserAdminService -c "/home/StatisticsServiceService/update-service.sh"
-#RUN su - UserAdminService -c "/home/StatisticsServiceService/start-service.sh &"
+# RUN su -  StatisticsService -c "/usr/bin/wget -O statisticsservice_override.properties -q -N https://raw.githubusercontent.com/Cantara/Whydah-StatisticsServiceService/master/statisticsservice_override.properties.example"
+RUN su - UserAdminService -c "/home/StatisticsService/update-service.sh"
+#RUN su - UserAdminService -c "/home/StatisticsService/start-service.sh &"
 
 ## Install CRMService
-RUN su -  CRMService -c "/usr/bin/wget -O update-service.sh -q -N https://raw.githubusercontent.com/cantara/Whydah-CRMService/master/update-service.sh"
-RUN su -  CRMService -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-CRMService/master/start-service.sh"
-RUN chmod 755 /home/CRMService/*.sh
-RUN su -  CRMService -c "/usr/bin/wget -O crmservice_override.properties -q -N https://raw.githubusercontent.com/Cantara/Whydah-CRMServiceService/master/crmservice_override.properties.example"
-RUN su - CRMService -c "/home/CRMServiceService/update-service.sh"
-#RUN su - CRMService -c "/home/CRMServiceService/start-service.sh &"
+# RUN su -  CRMService -c "/usr/bin/wget -O update-service.sh -q -N https://raw.githubusercontent.com/cantara/Whydah-CRMService/master/update-service.sh"
+# RUN su -  CRMService -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-CRMService/master/start-service.sh"
+# RUN chmod 755 /home/CRMService/*.sh
+# RUN su -  CRMService -c "/usr/bin/wget -O crmservice_override.properties -q -N https://raw.githubusercontent.com/Cantara/Whydah-CRMServiceService/master/crmservice_override.properties.example"
+# RUN su - CRMService -c "/home/CRMServiceService/update-service.sh"
+# RUN su - CRMService -c "/home/CRMServiceService/start-service.sh &"
 
 
 ## Install UserAdminWebApp
