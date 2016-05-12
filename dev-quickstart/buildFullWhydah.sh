@@ -6,16 +6,23 @@
 #                  We are investigating the issue to resolv it
 #
 
-cd sts
-mvn clean package
-cd ../ssolwa
-mvn clean package
-cd ../uas
-mvn clean package
-cd ../uawa
-mvn clean package
-cd ../uib
-mvn -DskipTests=true clean package
 
-cd ../crmservice
+cd Whydah-TypeLib
+mvn clean package
+cd ../Whydah-Java-SDK
+mvn clean package
+cd ../Whydah-UserAdminService
+mvn clean package
+cd ../Whydah-UserAdminWebApp
+mvn clean package
+cd ../Whydah-SecurityTokenService
+mvn clean package
+cd ../Whydah-SSOLoginWebApp  
+mvn clean package
+cd ../Whydah-UserIdentityBackend
+mvn  clean package
+
+cd ../Whydah-CRMService
+mvn clean package
+cd ../Whydah-StatisticsService
 mvn clean package
