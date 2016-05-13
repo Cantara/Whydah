@@ -8,7 +8,7 @@
 
 
 cd Whydah-TypeLib
-gitt pull
+git pull
 cd ../Whydah-Java-SDK
 git pull
 cd ../Whydah-UserAdminService
