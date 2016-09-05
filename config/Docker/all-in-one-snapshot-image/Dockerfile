@@ -11,7 +11,7 @@ RUN adduser --force-badname UserAdminService
 RUN adduser --force-badname UserAdminWebApp
 RUN adduser --force-badname UserIdentityBackend
 RUN adduser --force-badname CRMService
-RUN adduser --force-badname StatisticsSeervice
+RUN adduser --force-badname StatisticsService
 
 ## Install SSOLoginWebApp
 RUN su -  SSOLoginWebApp -c "/usr/bin/wget -O update-service.sh -q -N  https://raw.githubusercontent.com/altran/Whydah-SSOLoginWebApp/master/update-service.sh"
@@ -63,13 +63,24 @@ RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/update-service.sh"
 RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/start-service.sh &"
 
 ## Install CRMService
-## Install TestWebApp
 RUN su -  CRMService -c "/usr/bin/wget -O update-service.sh -q -N https://raw.githubusercontent.com/cantara/Whydah-CRMService/master/update-service.sh"
 RUN su -  CRMService -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-CRMService/master/start-service.sh"
 RUN chmod 755 /home/CRMService/*.sh
-RUN su -  CRMService -c "/usr/bin/wget -O crmservice.properties -q -N https://raw.githubusercontent.com/cantara/Whydah-CRMService/master/src/main/resources/appconfig/crmservice.properties"
-RUN su - CRMService -c "/home/CRMService/update-service.sh"
-RUN su - CRMService -c "/home/CRMService/start-service.sh &"
+RUN su -  CRMService -c "mkdir config_override"
+RUN su -  CRMService -c "/usr/bin/wget -O config_override/crmservice.properties -q -N https://raw.githubusercontent.com/cantara/Whydah-CRMService/master/src/main/resources/appconfig/crmservice.properties"
+RUN su -  CRMService -c "/home/CRMService/update-service.sh"
+RUN su -  CRMService -c "/home/CRMService/start-service.sh &"
+
+
+## Install StatisticsService
+RUN su -  StatisticsService -c "/usr/bin/wget -O update-service.sh -q -N https://raw.githubusercontent.com/cantara/Whydah-StatisticsService/master/update-service.sh"
+RUN su -  StatisticsService -c "/usr/bin/wget -O start-service.sh -q -N  https://raw.githubusercontent.com/cantara/Whydah-StatisticsService/master/start-service.sh"
+RUN chmod 755 /home/StatisticsService/*.sh
+RUN su -  StatisticsService -c "mkdir config_override"
+RUN su -  StatisticsService -c "/usr/bin/wget -O config_override/valuereporter.properties  -q -N https://raw.githubusercontent.com/cantara/Whydah-StatisticsService/master/valuereporter.override.properties.example"
+RUN su -  StatisticsService -c "/home/StatisticsService/update-service.sh"
+RUN su -  StatisticsService -c "/home/StatisticsService/start-service.sh &"
+
 
 
 ## Install Apache and set up proxypasses
