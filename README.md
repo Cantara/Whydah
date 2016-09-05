@@ -38,7 +38,7 @@ wget -qO- https://get.docker.com/ | sh
 sudo docker pull whydah/whydah-all-in-one-image
 sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:9996 -p 9997:9997 -p 9998:9998  whydah/whydah-all-in-one-image 
 ```
-
+[![](https://images.microbadger.com/badges/version/whydah/whydah-all-in-one-image.svg)](http://microbadger.com/images/whydah/whydah-all-in-one-image "Get your own version badge on microbadger.com")
 
 * Start Whydah
 ```
