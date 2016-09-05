@@ -80,10 +80,26 @@ RUN su -  StatisticsService -c "mkdir config_override"
 RUN su -  StatisticsService -c "/usr/bin/wget -O config_override/valuereporter.properties  -q -N https://raw.githubusercontent.com/cantara/Whydah-StatisticsService/master/valuereporter.override.properties.example"
 RUN su -  StatisticsService -c "/home/StatisticsService/update-service.sh"
 RUN su -  StatisticsService -c "/home/StatisticsService/start-service.sh &"
-
+RUN su -  StatisticsService -c "ln -s /home/StatisticsService/valuereporter.jar /home/StatisticsService/StatisticsService.jar"
 
 
 ## Install Apache and set up proxypasses
 RUN apt-get install -y apache2
 RUN cd /etc/httpd/conf.d;/usr/bin/wget -O whydah.conf  https://raw.githubusercontent.com/cantara/Whydah/master/config/apache/whydah.conf
 RUN /etc/init.d/apache2 restart
+
+
+## Set up start of services
+RUN apt-get -y  install python-setuptools
+RUN easy_install supervisor
+RUN mkdir -p /var/log/supervisor
+ADD supervisord.conf /etc/supervisor/supervisord.conf
+RUN ln -s /etc/supervisor/supervisord.conf supervisord.conf
+
+## Simple start-all for working inside the image
+RUN echo "/usr/local/bin/supervisord &" >/start_whydah.sh
+RUN chmod 755 /start_whydah.sh
+
+EXPOSE 22 80 9990 9992 9995 9997 9998 4901 12121
+CMD ["/usr/local/bin/supervisord","-c","/etc/supervisor/supervisord.conf"]
+
