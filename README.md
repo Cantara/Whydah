@@ -10,7 +10,7 @@ For a high-level feature description, see http://getwhydah.com
 
 ### Release log
 *   https://wiki.cantara.no/display/whydah/Whydah+Releases
-*   Whydah 2.2-rc-15 released
+*   Whydah 2.2-rc-26 released
    
 ### Build status:
 
