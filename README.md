@@ -8,6 +8,15 @@ For a high-level feature description, see http://getwhydah.com
 
 ![Fork me on GitHub](https://raw.githubusercontent.com/Cantara/Whydah/master/images/forkme_right_red_aa0000.png)
 
+### Documentation:
+
+* Overview - http://getwhydah.com/
+* Installation, Architecture and Development 
+   * https://wiki.cantara.no/display/whydah/Whydah+Home
+* Source Code 
+   * https://github.com/search?o=desc&q=Whydah&s=updated&type=Repositories&utf8=%E2%9C%93
+
+
 ### Release log
 *   https://wiki.cantara.no/display/whydah/Whydah+Releases
 *   Whydah 2.2-rc-26 released
@@ -139,25 +148,3 @@ ansible provisioning repository on github and adjust it according to youur needs
 
 
 
-### Documentation:
-
-* Overview - http://getwhydah.com/
-* Installation, Architecture and Development 
-   * https://wiki.cantara.no/display/whydah/Whydah+Home
-* Source Code 
-   * https://github.com/search?o=desc&q=Whydah&s=updated&type=Repositories&utf8=%E2%9C%93
-
-
-## LICENSE
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-<http://www.apache.org/licenses/LICENSE-2.0>
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
