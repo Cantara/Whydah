@@ -39,13 +39,13 @@ For a high-level feature description, see http://getwhydah.com
 
 ##### Whydah extensions
 
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-CRMService) - Whydah-CRMService  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-StatisticsService) - Whydah-StatisticsService  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-OAuth2Service) - Whydah-OAuth2Service - early stage version <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-CRMService) - Whydah-CRMService  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-StatisticsService) - Whydah-StatisticsService  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-OAuth2Service) - Whydah-OAuth2Service - early stage version <br />
 
 ##### Whydah Example app and integration examples
 
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-TestWebApp) - Whydah-TestWebApp <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TestWebApp) - Whydah-TestWebApp <br />
 
 ### Quick set-up (Using Docker on local machine)
 
