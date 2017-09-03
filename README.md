@@ -67,6 +67,18 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:99
 # run ./start_whydah.sh in image
 ```
 
+##### Startus of local Whydah
+```
+echo "SecurityTokenService"
+wget -qO- http://localhost:9998/tokenservice/health
+echo "SSOLWA"
+wget -qO- http://localhost:9997/sso/health
+echo "UAS"
+wget -qO- http://localhost:9992/useradminservice/health
+echo "UAWA"
+wget -qO- http://localhost:9996/useradmin/health
+```
+
 ##### Run whydah in early Java9?
 ```
 sudo docker pull whydah/java9-whydah-all-in-one
