@@ -31,10 +31,10 @@ For a high-level feature description, see http://getwhydah.com
 ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Java-SDK) - Whydah-Java-SDK  <br />
 ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TypeLib) - Whydah-TypeLib  <br />
 
-![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-TestWebApp) - Whydah-TestWebApp - Not 2.1 updated yet <br />
+![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-TestWebApp) - Whydah-TestWebApp <br />
 ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-CRMService) - Whydah-CRMService  <br />
 ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-StatisticsService) - Whydah-StatisticsService  <br />
-![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-OAuth2Service) - Whydah-OAuth2Service  <br />
+![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Cantara-Whydah-OAuth2Service) - Whydah-OAuth2Service - early stage version <br />
 
 
 ### Quick set-up (Using Docker on local machine)
