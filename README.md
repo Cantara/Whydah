@@ -25,7 +25,8 @@ For a high-level feature description, see http://getwhydah.com
 
 ##### Whydah Core/Main modules
 
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp) - https://github.com/Cantara/Whydah-SSOLoginWebApp  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp) - [![GitHub version](https://badge.fury.io/gh/boennemann%2Fbadges.svg)](https://github.com/Cantara/Whydah-SSOLoginWebApp)
+ - https://github.com/Cantara/Whydah-SSOLoginWebApp  <br />
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService) - https://github.com/Cantara/Whydah-SecurityTokenService <br />
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService) - https://github.com/Cantara/Whydah-UserAdminService  <br />
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend) - https://github.com/Cantara/Whydah-UserIdentityBackend <br />
