@@ -28,7 +28,7 @@ For a high-level feature description, see http://getwhydah.com
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp) - Whydah-SSOLoginWebApp  <br />
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService) - Whydah-SecurityTokenService <br />
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService) - Whydah-UserAdminService  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend) - Whydah-UserIdentityBackend  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend) - https://github.com/Cantara/Whydah-UserIdentityBackend <br />
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminWebApp) - Whydah-UserAdminWebApp  <br />
 
 ##### Whydah SDKs and Libraries
