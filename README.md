@@ -23,6 +23,9 @@ For a high-level feature description, see http://getwhydah.com
    
 ### Build status:
 
+[![Bintray](https://img.shields.io/bintray/v/blocke/releases/scalajack.svg?maxAge=2592000)](https://bintray.com/blocke/releases/scalajack)
+[![SSOLoginWebApp](https://img.shields.io/bintray/v/blocke/releases/scalajack.svg?maxAge=2592000)](https://bintray.com/blocke/releases/scalajack)
+
 ##### Whydah Core/Main modules
 
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp)  - https://github.com/Cantara/Whydah-SSOLoginWebApp  <br />
@@ -41,7 +44,7 @@ For a high-level feature description, see http://getwhydah.com
 
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-CRMService) - https://github.com/Cantara/Whydah-CRMService  <br />
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-StatisticsService) - https://github.com/Cantara/Whydah-StatisticsService  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-OAuth2Service) - https://github.com/Cantara/Whydah-OAuth2Service - early stage version <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-OAuth2Service) [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip) - https://github.com/Cantara/Whydah-OAuth2Service - early stage version <br />
 
 ##### Whydah Example app and integration examples
 
