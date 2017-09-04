@@ -23,27 +23,25 @@ For a high-level feature description, see http://getwhydah.com
    
 ### Build status:
 
-[![Bintray](https://img.shields.io/bintray/v/blocke/releases/scalajack.svg?maxAge=2592000)](https://bintray.com/blocke/releases/scalajack)
-[![SSOLoginWebApp](https://img.shields.io/bintray/v/blocke/releases/scalajack.svg?maxAge=2592000)](https://bintray.com/blocke/releases/scalajack)
 
 ##### Whydah Core/Main modules
 
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp)  - https://github.com/Cantara/Whydah-SSOLoginWebApp  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService) - https://github.com/Cantara/Whydah-SecurityTokenService <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService) - https://github.com/Cantara/Whydah-UserAdminService  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend) - https://github.com/Cantara/Whydah-UserIdentityBackend <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminWebApp) - https://github.com/Cantara/Whydah-UserAdminWebApp  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp)  - [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) - https://github.com/Cantara/Whydah-SSOLoginWebApp  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService) - [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) -  https://github.com/Cantara/Whydah-SecurityTokenService <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService) - [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) - https://github.com/Cantara/Whydah-UserAdminService  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend) - [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) - https://github.com/Cantara/Whydah-UserIdentityBackend <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminWebApp) - [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) - https://github.com/Cantara/Whydah-UserAdminWebApp  <br />
 
 ##### Whydah SDKs and Libraries
 
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Admin-SDK) - https://github.com/Cantara/Whydah-Admin-SDK <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Java-SDK) - https://github.com/Cantara/Whydah-Java-SDK  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TypeLib) - https://github.com/Cantara/Whydah-TypeLib <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Admin-SDK) - [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) - https://github.com/Cantara/Whydah-Admin-SDK <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Java-SDK) - [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) - https://github.com/Cantara/Whydah-Java-SDK  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TypeLib) - [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) - https://github.com/Cantara/Whydah-TypeLib <br />
 
 ##### Whydah extensions
 
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-CRMService) - https://github.com/Cantara/Whydah-CRMService  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-StatisticsService) - https://github.com/Cantara/Whydah-StatisticsService  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-CRMService) - [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) -  https://github.com/Cantara/Whydah-CRMService  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-StatisticsService) - [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) - https://github.com/Cantara/Whydah-StatisticsService  <br />
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-OAuth2Service) [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip) - https://github.com/Cantara/Whydah-OAuth2Service - early stage version <br />
 
 ##### Whydah Example app and integration examples
