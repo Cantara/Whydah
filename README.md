@@ -25,27 +25,27 @@ For a high-level feature description, see http://getwhydah.com
 
 ##### Whydah Core/Main modules
 
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp) - Whydah-SSOLoginWebApp  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService) - Whydah-SecurityTokenService <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService) - Whydah-UserAdminService  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SSOLoginWebApp) - https://github.com/Cantara/Whydah-SSOLoginWebApp  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-SecurityTokenService) - https://github.com/Cantara/Whydah-SecurityTokenService <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminService) - https://github.com/Cantara/Whydah-UserAdminService  <br />
 *  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserIdentityBackend) - https://github.com/Cantara/Whydah-UserIdentityBackend <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminWebApp) - Whydah-UserAdminWebApp  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-UserAdminWebApp) - https://github.com/Cantara/Whydah-UserAdminWebApp  <br />
 
 ##### Whydah SDKs and Libraries
 
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Admin-SDK) - Whydah-Admin-SDK  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Java-SDK) - Whydah-Java-SDK  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TypeLib) - Whydah-TypeLib  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Admin-SDK) - https://github.com/Cantara/Whydah-Admin-SDK <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-Java-SDK) - https://github.com/Cantara/Whydah-Java-SDK  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TypeLib) - https://github.com/Cantara/Whydah-TypeLib <br />
 
 ##### Whydah extensions
 
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-CRMService) - Whydah-CRMService  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-StatisticsService) - Whydah-StatisticsService  <br />
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-OAuth2Service) - Whydah-OAuth2Service - early stage version <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-CRMService) - https://github.com/Cantara/Whydah-CRMService  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-StatisticsService) - https://github.com/Cantara/Whydah-StatisticsService  <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-OAuth2Service) - https://github.com/Cantara/Whydah-OAuth2Service - early stage version <br />
 
 ##### Whydah Example app and integration examples
 
-*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TestWebApp) - Whydah-TestWebApp <br />
+*  ![Build Status](https://jenkins.capraconsulting.no/buildStatus/icon?job=Whydah-TestWebApp) - https://github.com/Cantara/Whydah-TestWebApp <br />
 
 ### Quick set-up (Using Docker on local machine)
 
