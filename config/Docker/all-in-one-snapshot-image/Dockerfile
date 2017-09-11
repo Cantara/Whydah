@@ -89,7 +89,10 @@ RUN su -  StatisticsService -c "/home/StatisticsService/start-service.sh &"
 
 ## Install Apache and set up proxypasses
 RUN apt-get install -y apache2
-RUN cd /etc/httpd/conf.d;/usr/bin/wget -O whydah.conf  https://raw.githubusercontent.com/cantara/Whydah/master/config/apache/whydah.conf
+RUN ln -s /etc/apache2/mods-available/proxy.load /etc/apache2/mods-enabled/proxy.load
+RUN ln -s /etc/apache2/mods-available/proxy_http.load /etc/apache2/mods-enabled/proxy_http.load
+# RUN cd /etc/httpd/conf.d;/usr/bin/wget -O whydah.conf  https://raw.githubusercontent.com/cantara/Whydah/master/config/apache/whydah.conf
+RUN cd /etc/apache2/sites-enabled;/usr/bin/wget -O whydah.conf  https://raw.githubusercontent.com/cantara/Whydah/master/config/apache/whydah.conf
 RUN /etc/init.d/apache2 restart
 
 
