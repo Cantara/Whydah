@@ -65,6 +65,7 @@ RUN chmod 755 /home/UserIdentityBackend/*.sh
 RUN su -  UserIdentityBackend -c "/usr/bin/wget -O useridentitybackend.override.properties -q -N https://raw.githubusercontent.com/cantara/Whydah-UserIdentityBackend/master/useridentitybackend.override.properties"
 RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/update-service.sh"
 RUN su - UserIdentityBackend -c "/home/UserIdentityBackend/start-service.sh &"
+ADD testdata /home/UserIdentityBackend/testdata
 
 ## Install CRMService
 RUN su -  CRMService -c "/usr/bin/wget -O update-service.sh -q -N https://raw.githubusercontent.com/cantara/Whydah-CRMService/master/scripts/update-service.sh"
