@@ -6,7 +6,7 @@
     "company" : "Norway AS",
     "tags" : "HIDDEN, JURISDICTION_NORWAY",
     "applicationUrl": null,
-    "logoUrl": null,
+    "logoUrl": "https://www.theregister.co.uk/Design/graphics/icons/vulture_black_60_trans.png",
     "roles": [{
       "id" : "acs101",
       "name" : "Employee"
@@ -32,7 +32,7 @@
     "security": {
       "minSecurityLevel": "0",
       "minDEFCON": "DEFCON5",
-      "maxSessionTimoutSeconds": "86400",
+      "maxSessionTimeoutSeconds": "86400",
       "allowedIpAddresses": [
         "0.0.0.0/0"
       ],
@@ -51,7 +51,7 @@
     "company" : "Norway AS",
     "tags" : "JURISDICTION_NORWAY",
     "applicationUrl": null,
-    "logoUrl": null,
+    "logoUrl": "https://www.theregister.co.uk/Design/graphics/icons/vulture_black_60_trans.png",
     "roles": [{
       "id" : "acs101",
       "name" : "Employee"
@@ -80,11 +80,12 @@
     "security": {
       "minSecurityLevel": "0",
       "minDEFCON": "DEFCON5",
-      "maxSessionTimoutSeconds": "86400",
+      "maxSessionTimeoutSeconds": "86400",
       "allowedIpAddresses": [
         "0.0.0.0/0"
       ],
       "userTokenFilter": "true",
+      "whydahUASAccess": true,
       "secret": "55fhRM6nbKZ2wfC6RMmMuzXpk"
     },
     "acl": [{
@@ -99,7 +100,7 @@
     "company" : "Cantara",
     "tags" : "HIDDEN, JURISDICTION_NORWAY",
     "applicationUrl": "https://whydahdev.cantara.no/uib/",
-    "logoUrl": "https://whydahdev.cantara.no/useradmin/img/whydah.png",
+    "logoUrl": "https://wiki.cantara.no/download/attachments/38962704/whydah",
     "roles": [{
       "id" : "why101",
       "name" : "WhydahAdministrator"
@@ -128,11 +129,12 @@
     "security": {
       "minSecurityLevel": "0",
       "minDEFCON": "DEFCON5",
-      "maxSessionTimoutSeconds": "86400",
+      "maxSessionTimeoutSeconds": "86400",
       "allowedIpAddresses": [
         "0.0.0.0/0"
       ],
-      "userTokenFilter": "true",
+      "userTokenFilter": "false",
+      "whydahUASAccess": true,
       "secret": "6r46g3q986Ep6By7B9J46m96D"
     },
     "acl": [{
@@ -147,7 +149,7 @@
     "company" : "Cantara",
     "tags" : "HIDDEN, JURISDICTION_NORWAY",
     "applicationUrl": "https://whydahdev.cantara.no/sts/",
-    "logoUrl": "https://whydahdev.cantara.no/useradmin/img/whydah.png",
+    "logoUrl": "https://wiki.cantara.no/download/attachments/38962704/whydah",
     "roles": [{
       "id" : "why101",
       "name" : "User"
@@ -170,11 +172,12 @@
     "security": {
       "minSecurityLevel": "0",
       "minDEFCON": "DEFCON5",
-      "maxSessionTimoutSeconds": "86400",
+      "maxSessionTimeoutSeconds": "86400",
       "allowedIpAddresses": [
         "0.0.0.0/0"
       ],
-      "userTokenFilter": "true",
+      "userTokenFilter": "false",
+      "whydahUASAccess": true,
       "secret": "6r46g3q986Ep6By7B9J46m96D"
     },
     "acl": [{
@@ -189,7 +192,7 @@
     "company" : "Cantara",
     "tags" : "HIDDEN, JURISDICTION_NORWAY",
     "applicationUrl": "https://whydahdev.cantara.no/uas/",
-    "logoUrl": "https://whydahdev.cantara.no/useradmin/img/whydah.png",
+    "logoUrl": "https://wiki.cantara.no/download/attachments/38962704/whydah",
     "roles": [{
       "id" : "why101",
       "name" : "User"
@@ -212,11 +215,11 @@
     "security": {
       "minSecurityLevel": "0",
       "minDEFCON": "DEFCON5",
-      "maxSessionTimoutSeconds": "86400",
+      "maxSessionTimeoutSeconds": "86400",
       "allowedIpAddresses": [
         "0.0.0.0/0"
       ],
-      "userTokenFilter": "true",
+      "userTokenFilter": "false",
       "secret": "9ju592A4t8dzz8mz7a5QQJ7Px"
     },
     "acl": [{
@@ -230,8 +233,8 @@
     "description": "The SSO / WebFrontend module of the Whydah IAM/SSO",
     "company" : "Cantara",
     "tags" : "HIDDEN, JURISDICTION_NORWAY",
-    "applicationUrl": "http://localhost:9997/sso/",
-    "logoUrl": "https://whydahdev.cantara.no/useradmin/img/whydah.png",
+    "applicationUrl": "https://whydahdev.cantara.no/sso/",
+    "logoUrl": "https://wiki.cantara.no/download/attachments/38962704/whydah",
     "roles": [{
       "id" : "why101",
       "name" : "SSOApplication"
@@ -251,11 +254,12 @@
     "security": {
       "minSecurityLevel": "0",
       "minDEFCON": "DEFCON5",
-      "maxSessionTimoutSeconds": "86400",
+      "maxSessionTimeoutSeconds": "86400",
       "allowedIpAddresses": [
         "0.0.0.0/0"
       ],
-      "userTokenFilter": "true",
+      "userTokenFilter": "false",
+      "whydahUASAccess": true,
       "secret": "33779936R6Jr47D4Hj5R6p9qT"
     },
     "acl": [{
@@ -269,8 +273,8 @@
     "description": "The back-office User Administration module of the Whydah IAM/SSO",
     "company" : "Cantara",
     "tags" : "JURISDICTION_NORWAY",
-    "applicationUrl": "http://localhost:9996/useradmin/",
-    "logoUrl": "https://whydahdev.cantara.no/useradmin/img/whydah.png",
+    "applicationUrl": "https://whydahdev.cantara.no/useradmin/",
+    "logoUrl": "https://wiki.cantara.no/download/attachments/38962704/whydah",
     "roles": [{
       "id" : "why101",
       "name" : "WhydahAdministrator"
@@ -299,12 +303,89 @@
     "security": {
       "minSecurityLevel": "0",
       "minDEFCON": "DEFCON5",
-      "maxSessionTimoutSeconds": "86400",
+      "maxSessionTimeoutSeconds": "86400",
+      "allowedIpAddresses": [
+        "0.0.0.0/0"
+      ],
+      "userTokenFilter": "false",
+      "whydahUASAccess": true,
+      "isWhydahAdmin": true,
+      "secret": "9EH5u5wJFKsUvJFmhypwK7j6D"
+    },
+    "acl": [{
+      "applicationId" : "2211",
+      "applicationACLPath" : "/user"
+    }]
+  },
+  {
+    "id": "2310",
+    "name": "Whydah-StatisticsService",
+    "description": "An optional Whydah module for user-oriented audit-log and usage statistics",
+    "company" : "Cantara",
+    "tags" : "JURISDICTION_NORWAY",
+    "applicationUrl": "https://whydahdev.cantara.no/reporter/",
+    "logoUrl": "https://wiki.cantara.no/download/attachments/38962704/whydah",
+    "roles": [{
+      "id" : "roleId1",
+      "name" : "Whydah-StatisticsService-user"
+    } ],
+    "organizationNames": [{
+      "id" : "2200",
+      "name" : "Cantara"
+    }, {
+      "id" : "2201",
+      "name" : "Whydah"
+    } ],
+    "defaultRoleName": "Whydah-StatisticsService-user",
+    "defaultOrganizationName": "Whydah",
+    "security": {
+      "minSecurityLevel": "0",
+      "minDEFCON": "DEFCON5",
+      "maxSessionTimeoutSeconds": "8640",
       "allowedIpAddresses": [
         "0.0.0.0/0"
       ],
       "userTokenFilter": "true",
-      "secret": "9EH5u5wJFKsUvJFmhypwK7j6D"
+      "whydahUASAccess": false,
+      "secret": "33879936R6Jr47D4Hj5R6p9qT"
+    },
+    "acl": [{
+      "applicationId" : "2211",
+      "applicationACLPath" : "/user"
+    }]
+  },
+  {
+    "id": "2311",
+    "name": "Whydah-CRMService",
+    "description": "An optional Whydah service to add person-data to Whydah users",
+    "company" : "Cantara",
+    "tags" : "JURISDICTION_NORWAY",
+    "applicationUrl": "https://whydahdev.cantara.no/crm/",
+    "logoUrl": "https://wiki.cantara.no/download/attachments/38962704/whydah",
+    "roles": [{
+      "id" : "roleId1",
+      "name" : "Whydah-CRMService-user"
+    } ],
+    "organizationNames": [{
+      "id" : "orgId",
+      "name" : "organizationName1"
+    }, {
+      "id" : "orgidxx",
+      "name" : "defaultOrgName"
+    } ],
+    "defaultRoleName": "Whydah-CRMService-user",
+    "defaultOrganizationName": "Whydah",
+    "security": {
+      "minSecurityLevel": "0",
+      "minDEFCON": "DEFCON5",
+      "maxSessionTimeoutSeconds": "86400",
+      "allowedIpAddresses": [
+        "0.0.0.0/0"
+      ],
+      "userTokenFilter": "true",
+      "whydahUASAccess": false,
+
+      "secret": "33879936R6Jr47D4Hj5R6p9qT"
     },
     "acl": [{
       "applicationId" : "2211",
@@ -318,7 +399,7 @@
     "company" : "Teknologihuset",
     "tags" : "JURISDICTION_NORWAY",
     "applicationUrl": "https://whydahdev.cantara.no/test/",
-    "logoUrl": "https://whydahdev.cantara.no/useradmin/img/whydah.png",
+    "logoUrl": "https://wiki.cantara.no/download/attachments/38962704/whydah",
     "roles": [{
       "id" : "roleId1",
       "name" : "Whydah-TestWebApplication-user"
@@ -335,11 +416,13 @@
     "security": {
       "minSecurityLevel": "0",
       "minDEFCON": "DEFCON5",
-      "maxSessionTimoutSeconds": "86400",
+      "maxSessionTimeoutSeconds": "86400",
       "allowedIpAddresses": [
         "0.0.0.0/0"
       ],
       "userTokenFilter": "true",
+      "whydahUASAccess": false,
+
       "secret": "33879936R6Jr47D4Hj5R6p9qT"
     },
     "acl": [{
@@ -354,7 +437,7 @@
     "company" : "Auke AS",
     "tags" : "SECURE CHAT",
     "applicationUrl": null,
-    "logoUrl": null,
+    "logoUrl": "https://www.theregister.co.uk/Design/graphics/icons/vulture_black_60_trans.png",
     "roles": [{
       "id" : "roleId1",
       "name" : "roleName1"
@@ -374,16 +457,60 @@
     "security": {
       "minSecurityLevel": "0",
       "minDEFCON": "DEFCON5",
-      "maxSessionTimoutSeconds": "86400",
+      "maxSessionTimeoutSeconds": "86400",
       "allowedIpAddresses": [
         "0.0.0.0/0"
       ],
       "userTokenFilter": "true",
+      "whydahUASAccess": false,
       "secret": "YKHH54bNpnvQEF2vCJSWtctB"
     },
     "acl": [{
       "applicationId" : "2211",
       "applicationACLPath" : "/user"
+    }]
+  },
+  {
+    "id": "9999",
+    "name": "Whydah-Jenkins",
+    "description": "System test application)",
+    "company" : "Cantara",
+    "tags" : "HIDDEN, JURISDICTION_NORWAY",
+    "applicationUrl": "https://whydahdev.cantara.no/uas/",
+    "logoUrl": "https://wiki.cantara.no/download/attachments/38962704/whydah",
+    "roles": [{
+      "id" : "why101",
+      "name" : "User"
+    }, {
+      "id" : "why102",
+      "name" : "Application"
+    } ],
+    "organizationNames": [{
+      "id" : "100",
+      "name" : "Whydah"
+    }, {
+      "id" : "101",
+      "name" : "Cantara"
+    }, {
+      "id" : "102",
+      "name" : "Getwhydah"
+    } ],
+    "defaultRoleName": "Application",
+    "defaultOrganizationName": "Whydah",
+    "security": {
+      "minSecurityLevel": "0",
+      "minDEFCON": "DEFCON5",
+      "maxSessionTimeoutSeconds": "86400",
+      "allowedIpAddresses": [
+        "0.0.0.0/0"
+      ],
+      "userTokenFilter": "false",
+      "whydahUASAccess": true,
+      "secret": "9ju592A4t8dzz8mz788QQJ7Px"
+    },
+    "acl": [{
+      "applicationId" : "9999",
+      "applicationACLPath" : "/"
     }]
   }
 ]
