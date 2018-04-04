@@ -11,6 +11,8 @@ cd Whydah-TypeLib
 mvn clean package
 cd ../Whydah-Java-SDK
 mvn clean package
+cd ../Whydah-Java-Admin-SDK
+mvn clean package
 cd ../Whydah-UserAdminService
 mvn clean package
 cd ../Whydah-UserAdminWebApp
@@ -25,4 +27,9 @@ mvn  clean package
 cd ../Whydah-CRMService
 mvn clean package
 cd ../Whydah-StatisticsService
+mvn clean package
+
+cd ../Whydah-SPAProxyService
+mvn clean package
+cd ../Whydah-OAuth2Service
 mvn clean package
