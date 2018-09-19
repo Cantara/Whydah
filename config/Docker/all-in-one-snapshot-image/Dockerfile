@@ -93,6 +93,13 @@ RUN ln -s /etc/apache2/mods-available/proxy_http.load /etc/apache2/mods-enabled/
 RUN cd /etc/apache2/sites-enabled;/usr/bin/wget -O whydah.conf  https://raw.githubusercontent.com/cantara/Whydah/master/config/apache/whydah.conf
 RUN /etc/init.d/apache2 restart
 
+## Install PostgreSQL for CRMService
+RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
+RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+RUN apt-get -y install software-properties-common postgresql-10 postgresql-client-10 postgresql-contrib-10
+RUN su - postgres -c "echo \"listen_addresses='*'\" >> /etc/postgresql/10/main/postgresql.conf"
+
+VOLUME ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
 
 ## Set up start of services
 RUN apt-get -y  install python-setuptools supervisor
