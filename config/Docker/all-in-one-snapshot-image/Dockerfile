@@ -97,6 +97,9 @@ RUN /etc/init.d/apache2 restart
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
 RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 RUN apt-get -y install software-properties-common postgresql-10 postgresql-client-10 postgresql-contrib-10
+ADD crmservice-testdata /var/lib/postgresql/testdata
+RUN chmod 755 /var/lib/postgresql/testdata/*.sh
+RUN su - postgres -c "/var/lib/postgresql/testdata/init_db.sh"
 RUN su - postgres -c "echo \"listen_addresses='*'\" >> /etc/postgresql/10/main/postgresql.conf"
 
 VOLUME ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
