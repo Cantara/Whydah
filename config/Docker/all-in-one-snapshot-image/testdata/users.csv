@@ -1,12 +1,6 @@
 #userId, username, password, firstName, lastName, email, cellPhone, personRef
 admin, admin, whydahadmin, User, Admin, useradmin@whydah.net, +1555406789, 0
-erik.drolshammer, erikd, secretPw, Erik, Drolshammer, erik.drolshammer@altran.com, +47123456, 1
-miley.cyrus, mcyrus, cyrus, Miley, Cyrus, test1@getwhydah.com, +4712345678, 2
-joan, joanr, rivers, Joan, Rivers, test2@getwhydah.com, +4712345678, 2
-coolj, cloonie, Cloonie, George, Clooney, test3@getwhydah.com, +4712345678, 2
-stokkd, stokkstad, Marthe, Marte, Stokstad, test4@getwhydah.com, +4712345678, 2
-pit, pit, Brad, Brad, Pit, test5@getwhydah.com, +4712345678, 2
-atle, antonsen, Atle, Atle, Antonsen, atle@getwhydah.com, +4712345678, 3
-alm, almaas, Jon, Jon, Almaas, jon@getwhydah.com, +4712345678, 3
-ull, ullmann, Liv, Liv, Ullmann, jon@getwhydah.com, +4712345678, 1
-william, will.i.am, lukas, William, Lukas, test@getwhydah.com, +4712345678, 2
+miley.cyrus, mcyrus, cyrus, Miley, Cyrus, test1@getwhydah.com, +4712345678, 2	
+joan, joanr, rivers, Joan, Rivers, test2@getwhydah.com, +4712345678, 2	
+coolj, cloonie, Cloonie, George, Clooney, test3@getwhydah.com, +4712345678, 2	
+stokkd, stokkstad, Marthe, Marte, Stokstad, test4@getwhydah.com, +4712345678, 2	
