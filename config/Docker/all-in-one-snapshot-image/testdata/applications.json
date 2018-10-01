@@ -595,5 +595,73 @@
         "applicationACLPath": "/"
       }
     ]
+  },
+  {
+    "id": "402222",
+    "name": "Whydah-SPAProxyService",
+    "description": "Proxy for SinglePageApplication requests.",
+    "company": "Cantara",
+    "tags": "HIDDEN, JURISDICTION_NORWAY",
+    "applicationUrl": "https://inn-qa-spaproxy.opplysningen.no/proxy/health",
+    "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7vDCWeE45Z9Oor3SKgp5c8FaOK_uNr8cQ9RIgqV9V3PdymGjX",
+    "roles": [
+      { "id": "whydah-admin", "name": "whydah-admin" },
+      { "id": "read", "name": "read" }
+    ],
+    "defaultRoleName": "read",
+    "organizationNames": [{ "id": "Whydah", "name": "Whydah" }],
+    "defaultOrganizationName": "Whydah",
+    "security": {
+      "minSecurityLevel": "0",
+      "minimumDEFCONLevel": "DEFCON5",
+      "maxSessionTimeoutSeconds": "864000",
+      "allowedIpAddresses": ["0.0.0.0/0"],
+      "userTokenFilter": true,
+      "whydahUASAccess": true,
+      "secret": "pIgWd57tLsVn8709psMpx",
+      "whydahAdmin": false
+    },
+    "supportedUserSessionLevels": [],
+    "acl": [],
+    "minimumApplicationDEFCON": "DEFCON5",
+    "orgs": [{ "id": "Whydah", "name": "Whydah" }]
+  },
+  {
+    "id": "cd0447cda114d11f343a497ff",
+    "name": "localhostApp",
+    "description": "",
+    "company": "CALS",
+    "tags": "POPUPENABLED_true",
+    "applicationUrl": "http://localhost:3000",
+    "logoUrl": "",
+    "roles": [],
+    "defaultRoleName": "",
+    "organizationNames": [],
+    "defaultOrganizationName": "",
+    "security": {
+      "minSecurityLevel": "0",
+      "minimumDEFCONLevel": "DEFCON5",
+      "maxSessionTimeoutSeconds": "15552000000",
+      "allowedIpAddresses": ["0.0.0.0/0"],
+      "userTokenFilter": true,
+      "whydahUASAccess": false,
+      "secret": "73ff29b4300c5f45360234ab8",
+      "whydahAdmin": false
+    },
+    "supportedUserSessionLevels": [],
+    "orgs": [],
+    "minimumApplicationDEFCON": "DEFCON5",
+    "acl": [
+      {
+        "applicationId": "cd0447cda114d11f343a497ff",
+        "applicationACLPath": "",
+        "accessRights": ["READ", "SSO_REDIRECT"]
+      },
+      {
+        "applicationId": "cd0447cda114d11f343a497ff",
+        "applicationACLPath": "",
+        "accessRights": ["READ", "OAUTH2_REDIRECT"]
+      }
+    ]
   }
 ]
