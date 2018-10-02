@@ -112,7 +112,7 @@ RUN /etc/init.d/apache2 restart
 ## Install PostgreSQL for CRMService
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
 RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" > /etc/apt/sources.list.d/pgdg.list
-ADD crmservice-testdata /var/lib/postgresql/testdata
+ADD crmservice /var/lib/postgresql/testdata
 RUN chmod 755 /var/lib/postgresql/testdata/*.sh
 RUN su - postgres -c "/var/lib/postgresql/testdata/init_db.sh"
 RUN su - postgres -c "echo \"listen_addresses='*'\" >> /etc/postgresql/10/main/postgresql.conf"
