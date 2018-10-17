@@ -19,7 +19,7 @@ For a high-level feature description, see http://getwhydah.com
 
 ### Release log
 *   https://wiki.cantara.no/display/whydah/Whydah+Releases
-*   Whydah 2.4 released
+*   Whydah 2.5.7 released
    
 ### Build status:
 
