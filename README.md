@@ -6,6 +6,9 @@ Whydah SSO and IAM Solution
 This is the top-level repository for the Whydah components.
 For a high-level feature description, see http://getwhydah.com
 
+For status uf the different modules
+* https://scp.cantara.no/group/Whydah
+
 ![Fork me on GitHub](https://raw.githubusercontent.com/Cantara/Whydah/master/images/forkme_right_red_aa0000.png)
 
 ### Documentation:
