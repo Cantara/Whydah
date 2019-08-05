@@ -50,7 +50,7 @@ For status uf the different modules
 
 ##### Whydah Example app and integration examples
 
-*  ![Build Status](https://jenkins.quadim.ai.no/buildStatus/icon?job=Whydah-TestWebApp) - [![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept) - https://github.com/Cantara/Whydah-TestWebApp <br />
+*  ![Build Status](https://jenkins.quadim.ai/buildStatus/icon?job=Whydah-TestWebApp) - [![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept) - https://github.com/Cantara/Whydah-TestWebApp <br />
 
 ### Quick set-up (Using Docker on local machine)
 
