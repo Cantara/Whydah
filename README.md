@@ -97,9 +97,9 @@ sudo docker run -it -p 80:9999 -p 9990:9990 -p 9992:9992 -p 9995:9995 -p 9996:99
 
 ##### Example code, Whydah Java SDK with automatic session management threads
 ```java
-WhydahApplicationSession aSession = new WhydahApplicationSssion(stsURL, appCtedential);
-WhydahUserSession uSession = new WhydahUserSession(aSession,userCredential);
-if (uSession.hasRole("MyAppRole"){
+WhydahApplicationSession applicationSession = new WhydahApplicationSssion(stsURL, appCtedential);
+WhydahUserSession uSession = new WhydahUserSession(applicationSession,userCredential);
+if (userSession.hasRole("MyAppRole"){
   // do admin privilege operation
 }
 ```
@@ -107,12 +107,12 @@ if (uSession.hasRole("MyAppRole"){
 ##### Example RAW HTTP(S) using Apache HTTP Components Fluent API and jOOX Fluent API
 ```java
 //  Execute a POST to authenticate my application
-String aToken = Request.Post("https://sso.whydah.net/sso/logon")
+String applicationTokenXMlString = Request.Post("https://sso.whydah.net/sso/logon")
         .bodyForm(Form.form().add("applicationcredential", myAppCred).build())
         .execute().returnContent().asBytes();
 
 //  authenticate with username and password (UserCredential)
-String uToken = Request.Post("https://sso.whydah.net/sso/user/"+appTokenID+"/"+"/usertoken/")
+String userTokenXMlString = Request.Post("https://sso.whydah.net/sso/user/"+appTokenID+"/"+"/usertoken/")
         .bodyForm(Form.form().add("apptoken", aToken)
         .add("usercredential", new UserCredential(username,password).toXML()).build())
         .execute().returnContent().asBytes();
@@ -120,7 +120,7 @@ String uToken = Request.Post("https://sso.whydah.net/sso/user/"+appTokenID+"/"+"
 
 // That's all you need to get a full user database, IAM/SSO, Facebook/OAUTH support ++
 boolean hasEmployeeRoleInMyApp = $(usertoken)
-        .xpath("/usertoken/application[@ID="+myAppId+"]/role[@name=\"Employee\"");
+        .xpath("/usertoken/application[@ID="+myApplicationId+"]/role[@name=\"Employee\"");
 ```
 ![Sequence Diagram](https://raw.githubusercontent.com/cantara/Whydah/master/images/Integration%20-%20simple%20standalone.png)
 
