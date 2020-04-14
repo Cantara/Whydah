@@ -3,6 +3,7 @@
 FROM cantara/zulu
 MAINTAINER Totto <totto@totto.org>
 RUN apt-get -y update
+RUN apt-get -y upgrade
 RUN apt-get install -y apache2 wget curl openssh-server software-properties-common postgresql-10 postgresql-client-10 postgresql-contrib-10 python-setuptools supervisor
 
 RUN adduser --force-badname SSOLoginWebApp
