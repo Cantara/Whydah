@@ -116,7 +116,7 @@ RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" > /etc
 ADD crmservice /var/lib/postgresql/testdata
 RUN chmod 755 /var/lib/postgresql/testdata/*.sh
 RUN su - postgres -c "/var/lib/postgresql/testdata/init_db.sh"
-RUN su - postgres -c "echo \"listen_addresses='*'\" >> /etc/postgresql/10/main/postgresql.conf"
+RUN su - postgres -c "echo \"listen_addresses='*'\" >> /etc/postgresql/12/main/postgresql.conf"
 
 VOLUME ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
 
