@@ -22,7 +22,7 @@ For status uf the different modules
 
 ### Release log
 *   https://wiki.cantara.no/display/whydah/Whydah+Releases
-*   Whydah 2.5.37 released
+*   Whydah 2.5.41 released
    
 ### Build status:
 
