@@ -4,7 +4,7 @@ Whydah SSO and IAM Solution
 ![Whydah is an Identity and Single Sign-On solution. Whydah that provides user and application management, advanced role-based access control and flexible integration's.](https://raw.githubusercontent.com/Cantara/Whydah/master/images/getwhydah.png)
 
 This is the top-level repository for the Whydah components.
-For a high-level feature description, see http://getwhydah.com
+* For a high-level feature description, see http://getwhydah.com
 
 For status uf the different modules
 * https://scp.cantara.no/group/Whydah
@@ -22,7 +22,7 @@ For status uf the different modules
 
 ### Release log
 *   https://wiki.cantara.no/display/whydah/Whydah+Releases
-*   Whydah 2.5.37 released
+*   Whydah 2.5.41 released
    
 ### Build status:
 

@@ -2,6 +2,7 @@ FROM ubuntu:trusty
 MAINTAINER Kim Christian Gaarder <kim.christian.gaarder@gmail.com>
 
 RUN apt-get update
+RUN apt-get upgrade -y
 
 # Tools
 RUN apt-get install -y curl
