@@ -1,7 +1,7 @@
 FROM cantara/zulu
 MAINTAINER Totto <totto@totto.org>
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends \
 		openssh-server apache2 supervisor \
 	&& rm -rf /var/lib/apt/lists/*
 
