@@ -55,6 +55,7 @@ For status uf the different modules
 ### Quick set-up (Using Docker on local machine)
 
 #####  Install docker
+
 ```
 wget -qO- https://get.docker.com/ | sh
 ```
