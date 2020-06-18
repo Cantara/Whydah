@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:focal
 MAINTAINER Kim Christian Gaarder <kim.christian.gaarder@gmail.com>
 
 RUN apt-get update
