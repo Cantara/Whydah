@@ -5,7 +5,7 @@ Whydah SSO and IAM Solution
 
 This is the top-level repository for the Whydah components.
 * For a high-level feature description, see http://getwhydah.com
-* Change / Release-log https://wiki.cantara.no/display/whydah/Whydah+2.5+-+Release+Log
+* Change / Release-log https://wiki.cantara.no/display/whydah/Whydah+2.6+-+Release+Log
 
 For status of the different modules
 * https://scp.cantara.no/group/Whydah
