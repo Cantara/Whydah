@@ -23,7 +23,7 @@ For status of the different modules
 
 ### Release log
 *   See https://wiki.cantara.no/display/whydah/Whydah+Releases
-*   Whydah 2.6.0 (2020-10) released
+*   Whydah 2.6.2 (2020-11) released
    
 ### Build status:
 
