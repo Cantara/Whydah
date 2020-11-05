@@ -12,9 +12,10 @@ For status of the different modules
 
 ![Fork me on GitHub](https://raw.githubusercontent.com/Cantara/Whydah/master/images/forkme_right_red_aa0000.png)
 
-### Documentation:
+### Documentation
 
-* Overview - http://getwhydah.com/
+* Overview (Not really maintained and updated)
+  *  http://getwhydah.com/
 * Installation, Architecture and Development 
    * https://wiki.cantara.no/display/whydah/Whydah+Home
 * Source Code 
@@ -24,9 +25,9 @@ For status of the different modules
 ### Release log
 *   See https://wiki.cantara.no/display/whydah/Whydah+Releases
 *   Whydah 2.6.3 (2020-11) released
-   
-### Build status:
 
+
+### Build status
 
 ##### Whydah Core/Main modules
 
