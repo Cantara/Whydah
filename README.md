@@ -24,7 +24,7 @@ For status of the different modules
 
 ### Release log
 *   See https://wiki.cantara.no/display/whydah/Whydah+Releases
-*   Whydah 2.11 (2022-03) released
+*   Whydah 2.13 (2022-08) released
 
 
 ### Build status
