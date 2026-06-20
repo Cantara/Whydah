@@ -3,6 +3,7 @@ project: Whydah
 description: "Whydah SSO and IAM Solution ======"
 version: "0.1.0"
 updated: "2026-06-20"
+not_for: []
 temporal:
   valid_from: "2026-03-19"
 signing:
@@ -10,28 +11,26 @@ signing:
   scope: this-manifest
   public_key: "MCowBQYDK2VwAyEAuipgusnqU9vjf3p2yPVLD/DmERT6tBbLOqEETdxAhMU="
   signature: "https://raw.githubusercontent.com/Cantara/Whydah/master/knowledge.yaml.sig"
-
 units:
-  - id: readme
-    path: README.md
-    intent: "Documentation:"
-    scope: global
-    audience: [human, agent]
-    validated: "2026-03-15"
-    hints:
-      token_estimate: 3400
-      content_hash:
-        algorithm: sha256
-        value: ""
-
-  - id: claude
-    path: CLAUDE.md
-    intent: "Whydah"
-    scope: global
-    audience: [human, agent]
-    validated: "2026-03-15"
-    hints:
-      token_estimate: 400
-      content_hash:
-        algorithm: sha256
-        value: ""
+- id: readme
+  path: README.md
+  intent: "Documentation:"
+  scope: global
+  audience: [human, agent]
+  validated: "2026-03-15"
+  hints:
+    token_estimate: 3400
+  content_hash:
+    algorithm: sha256
+    value: ""
+- id: claude
+  path: CLAUDE.md
+  intent: "Whydah"
+  scope: global
+  audience: [human, agent]
+  validated: "2026-03-15"
+  hints:
+    token_estimate: 400
+  content_hash:
+    algorithm: sha256
+    value: ""
