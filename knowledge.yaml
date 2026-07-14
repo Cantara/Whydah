@@ -1,4 +1,4 @@
-kcp_version: "0.21"
+kcp_version: "0.26"
 project: Whydah
 description: "Whydah SSO and IAM Solution ======"
 version: "0.1.0"
@@ -20,9 +20,6 @@ units:
   validated: "2026-03-15"
   hints:
     token_estimate: 3400
-  content_hash:
-    algorithm: sha256
-    value: ""
 - id: claude
   path: CLAUDE.md
   intent: "Whydah"
@@ -31,6 +28,11 @@ units:
   validated: "2026-03-15"
   hints:
     token_estimate: 400
-  content_hash:
-    algorithm: sha256
-    value: ""
+
+# Serving Endpoint Binding (KCP SPEC v0.26 §3.12): authoritative manifest URL
+# and authorized MCP representative. Ignored by pre-0.26 verifiers.
+serving:
+  manifest:
+    - https://raw.githubusercontent.com/Cantara/Whydah/master/knowledge.yaml
+  mcp:
+    - https://mcp.cantara.no/mcp
